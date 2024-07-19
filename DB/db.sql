@@ -41,3 +41,4 @@ FOREIGN KEY (id_producto) REFERENCES Productos(id_producto),
 FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario),
 FOREIGN KEY (id_habitacion) REFERENCES Habitaciones(id_habitacion)
 );
+
