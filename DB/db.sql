@@ -25,7 +25,7 @@ passwd varchar(255) NOT NULL
 );
 
 -- Tabla de Habitaciones
-CREATE TABLE Habitaciones (
+CREATE TABLE HABITACIONES (
     id_habitacion SMALLSERIAL PRIMARY KEY,
     numero varchar(10) NOT NULL,
     tipo varchar(50) NOT NULL,
@@ -39,15 +39,34 @@ CREATE TYPE tipo_movimiento AS ENUM ('entrada', 'salida', 'traslado');
 --Tabla moviemientos
 CREATE TABLE MOVIMIENTOS(
 id_movimiento SERIAL PRIMARY KEY,
-fecha DATETIME NOT NULL,
+fecha date NOT NULL,
 tipo tipo_movimiento NOT NULL,
 id_producto int,
 cantidad int NOT NULL,
 descripcion text,
 id_usuario int,
 id_habitacion int NULL,
-FOREIGN KEY (id_producto) REFERENCES Productos(id),
+FOREIGN KEY (id_producto) REFERENCES Productos(ID),
 FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario),
 FOREIGN KEY (id_habitacion) REFERENCES Habitaciones(id_habitacion)
 );
 
+-- Tabla Inventario en Habitaciones
+CREATE TABLE INVENTARIO_HABITACIONES (
+    id_inventario SMALLSERIAL PRIMARY KEY,
+    id_habitacion int,
+    id_producto int,
+    cantidad int NOT NULL,
+    fecha_actualizacion date NOT NULL,
+    FOREIGN KEY (id_habitacion) REFERENCES Habitaciones(id_habitacion),
+    FOREIGN KEY (id_producto) REFERENCES Productos(ID)
+);
+
+-- Tabla Comprobantes
+CREATE TABLE COMPROBANTES (
+    id_comprobante SERIAL PRIMARY KEY,
+    id_movimiento int,
+    fecha_emision date NOT NULL,
+    detalle text,
+    FOREIGN KEY (id_movimiento) REFERENCES Movimientos(id_movimiento)
+);
