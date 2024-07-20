@@ -24,6 +24,15 @@ username varchar(50) UNIQUE NOT NULL,
 passwd varchar(255) NOT NULL
 );
 
+-- Tabla de Habitaciones
+CREATE TABLE Habitaciones (
+    id_habitacion SMALLSERIAL PRIMARY KEY,
+    numero varchar(10) NOT NULL,
+    tipo varchar(50) NOT NULL,
+    capacidad int NOT NULL,
+    descripcion text NOT NULL
+);
+
 --Crear tipo enum tipo_movimiento
 CREATE TYPE tipo_movimiento AS ENUM ('entrada', 'salida', 'traslado');
 
@@ -32,12 +41,12 @@ CREATE TABLE MOVIMIENTOS(
 id_movimiento SERIAL PRIMARY KEY,
 fecha DATETIME NOT NULL,
 tipo tipo_movimiento NOT NULL,
-id_producto INT,
-cantidad INT NOT NULL,
-descripcion TEXT,
-id_usuario INT,
-id_habitacion INT NULL,
-FOREIGN KEY (id_producto) REFERENCES Productos(id_producto),
+id_producto int,
+cantidad int NOT NULL,
+descripcion text,
+id_usuario int,
+id_habitacion int NULL,
+FOREIGN KEY (id_producto) REFERENCES Productos(id),
 FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario),
 FOREIGN KEY (id_habitacion) REFERENCES Habitaciones(id_habitacion)
 );
