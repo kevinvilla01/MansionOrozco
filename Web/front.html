@@ -52,7 +52,7 @@
 		<style type="text/tailwindcss">
 
 nav {
-  background-color: #333;
+  background-color: #8f8f8f;
   padding: 10px;
   text-align: center;
 }
@@ -79,52 +79,107 @@ nav a:hover {
   color: #ccc;
 }
 
-			@layer base {
-				:root {
-					--background: 0 0% 100%;
---foreground: 240 10% 3.9%;
---card: 0 0% 100%;
---card-foreground: 240 10% 3.9%;
---popover: 0 0% 100%;
---popover-foreground: 240 10% 3.9%;
---primary: 240 5.9% 10%;
---primary-foreground: 0 0% 98%;
---secondary: 240 4.8% 95.9%;
---secondary-foreground: 240 5.9% 10%;
---muted: 240 4.8% 95.9%;
---muted-foreground: 240 3.8% 46.1%;
---accent: 240 4.8% 95.9%;
---accent-foreground: 240 5.9% 10%;
---destructive: 0 84.2% 60.2%;
---destructive-foreground: 0 0% 98%;
---border: 240 5.9% 90%;
---input: 240 5.9% 90%;
---ring: 240 5.9% 10%;
---radius: 0.5rem;
-				}
-				.dark {
-					--background: 240 10% 3.9%;
---foreground: 0 0% 98%;
---card: 240 10% 3.9%;
---card-foreground: 0 0% 98%;
---popover: 240 10% 3.9%;
---popover-foreground: 0 0% 98%;
---primary: 0 0% 98%;
---primary-foreground: 240 5.9% 10%;
---secondary: 240 3.7% 15.9%;
---secondary-foreground: 0 0% 98%;
---muted: 240 3.7% 15.9%;
---muted-foreground: 240 5% 64.9%;
---accent: 240 3.7% 15.9%;
---accent-foreground: 0 0% 98%;
---destructive: 0 62.8% 30.6%;
---destructive-foreground: 0 0% 98%;
---border: 240 3.7% 15.9%;
---input: 240 3.7% 15.9%;
---ring: 240 4.9% 83.9%;
-				}
-			}
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+        --foreground: 240 10% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 240 4.8% 95.9%;
+        --secondary-foreground: 240 5.9% 10%;
+        --muted: 240 4.8% 95.9%;
+        --muted-foreground: 240 3.8% 46.1%;
+        --accent: 240 4.8% 95.9%;
+        --accent-foreground: 240 5.9% 10%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+        --ring: 240 5.9% 10%;
+        --radius: 0.5rem;
 		
+    }
+	.dark {
+		--background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 240 10% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 240 10% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 5.9% 10%;
+        --secondary: 240 3.7% 15.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 240 3.7% 15.9%;
+        --muted-foreground: 240 5% 64.9%;
+        --accent: 240 3.7% 15.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 3.7% 15.9%;
+        --input: 240 3.7% 15.9%;
+        --ring: 240 4.9% 83.9%;
+	}
+}
+      
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: #ccc;
+}
+
+.menu.show {
+  display: block;
+}
+
+.header {
+}
+.navbar {
+}
+.logo {
+}
+.menu {
+}
+.list_icon {
+}
+.ul_links {
+}
+.li_links {
+}
+.link {
+}
+
         
     </style>
 </head>
@@ -141,30 +196,27 @@ nav a:hover {
             <li><a href="#" class="text-primary-foreground hover:text-primary/80">Offers</a></li>
             <li><a href="#" class="text-primary-foreground hover:text-primary/80">Contact</a></li>
           </ul>
-          <button id="menuBtn" class="text-primary-foreground lg:hidden focus:outline-none">
-            <img aria-hidden="true" alt="menu" src="https://cdn-icons-png.freepik.com/256/11809/11809172.png?uid=R155134135&ga=GA1.1.413413637.1717507559&semt=ais_hybrid" />
-          </button>
         </div>
-      </nav>
-      <div id="menu" class="fixed top-0 right-0 h-full w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
-        <ul class="flex flex-col items-end p-4">
-          <li><a href="#" class="text-primary-foreground hover:text-primary/80">Home</a></li>
-          <li><a href="#" class="text-primary-foreground hover:text-primary/80">Rooms</a></li>
-          <li><a href="#" class="text-primary-foreground hover:text-primary/80">Dining</a></li>
-          <li><a href="#" class="text-primary-foreground hover:text-primary/80">Spa</a></li>
-          <li><a href="#" class="text-primary-foreground hover:text-primary/80">Offers</a></li>
-          <li><a href="#" class="text-primary-foreground hover:text-primary/80">Contact</a></li>
-        </ul>
-      </div>
-      
-      <script>
-        const menuBtn = document.getElementById('menuBtn');
-        const menu = document.getElementById('menu');
-        menuBtn.addEventListener('click', () => {
-          menu.classList.toggle('translate-x-full');
-        });
-      </script>
+         
+    </nav>
 
+    <header class="header">
+            <nav class="navbar">
+                <h1 class="logo">logo</h1>
+                <label class="menu" for="menu1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </label>
+                <input type="checkbox" id="menu1">
+                <ul class="ul_links">
+                    <li class="li_links"><a href="#" class="link">Iniciar Sesión</a></li>
+                    <li><a href="#" class="link">Cerrar Sesión</a></li>
+                    
+                </ul>
+            </nav>
+    </header>
+    
     <div class="min-h-screen flex items-center justify-center bg-background">
     <form class="bg-card shadow-lg rounded-lg p-8 max-w-screen-lg w-full flex">
         <div class="w-full md:w-1/2 flex flex-col items-center justify-center">
