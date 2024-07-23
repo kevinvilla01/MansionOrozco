@@ -1,23 +1,52 @@
+body {
+    font-family: Arial;
+}
+
 /****************
 Estilos de la barra de navegación
 *****************/
+#logo {
+    display: inline-block;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.image-container {
+    display: flex;
+    align-items: left; /* Align items vertically */
+}
+
 nav {
     font-family: Arial;
+    font-weight: 500;
 }
+
+nav ul {
+    background-color: var(dark var(--background));
+}
+
+#MO0 {
+    font-size: x-large;
+}
+
 #MO1 {
-    font-size: medium;    
+    font-size: large;   
+    display: inline-block;
+    vertical-align: middle; 
+    margin-bottom: 2px;
 }
 
 #MO2{
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 3%;
   display: flex;
   justify-content: space-between;
 }
 
 #MO3 {
   margin-right: 20px;
+  margin-top: 0;
 }
 
 #MO {
@@ -87,6 +116,10 @@ nav a:hover {
 /****************
 Aquí termina la barra de navegación
 *****************/
+#IS {
+    font-weight: bold;
+}
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -109,12 +142,6 @@ Aquí termina la barra de navegación
         --input: 240 5.9% 90%;
         --ring: 240 5.9% 10%;
         --radius: 0.5rem;
-        --color_primario: #4e4951;
-        --color_primario_suave: #939393;
-        --color_blanco: #fff;
-        --altura_header: 80px;
-        --padding_left_right: 2rem;
-        --ancho_maximo: 1200px;
 		
     }
 	.dark {
