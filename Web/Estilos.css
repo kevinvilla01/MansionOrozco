@@ -1,6 +1,13 @@
 /****************
 Estilos de la barra de navegación
 *****************/
+nav {
+    font-family: Arial;
+}
+#MO1 {
+    font-size: medium;    
+}
+
 #MO2{
   list-style: none;
   margin: 0;
@@ -22,7 +29,18 @@ nav a:hover {
   color: #ecbd31;
 }
 
+#MO4 #menu-des {
+    display: none;
+}
 
+#MO4:hover > #menu-des {
+    display: block;
+}
+
+#menu-des {
+    float:right ;
+    text-align: center;
+}
 
 .menu-toggle {
     background-color: transparent;
