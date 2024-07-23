@@ -1,10 +1,4 @@
-nav {
-  background-color: #8f8f8f;
-  padding: 10px;
-  text-align: center;
-}
-
-nav ul {
+#MO2{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -12,18 +6,17 @@ nav ul {
   justify-content: space-between;
 }
 
-nav li {
+#MO3 {
   margin-right: 20px;
 }
 
-nav a {
+#MO {
   color: #fff;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: #ccc;
+  color: #ecbd31;
 }
 
 @layer base {
@@ -119,40 +112,4 @@ nav a:hover {
     margin: 0;
     padding: 0;
     box-sizing: 0;
-}
-
-.header {
-    height: var(--altura_header);
-    background-color: var(--color_primario);
-}
-.navbar {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-.logo {
-}
-.menu {
-}
-#menu1 {
-    display: none;
-
-}
-.list_icon {
-}
-.ul_links {
-    width: 100%;
-    background-color: #000000;
-    position: absolute;
-    top: var(--altura_header);
-    
-    display: flex;
-    justify-content: center;
-}
-.li_links {
-}
-.link {
 }
