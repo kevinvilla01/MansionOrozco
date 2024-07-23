@@ -1,3 +1,6 @@
+/****************
+Estilos de la barra de navegación
+*****************/
 #MO2{
   list-style: none;
   margin: 0;
@@ -19,6 +22,53 @@ nav a:hover {
   color: #ecbd31;
 }
 
+
+
+.menu-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-toggle i {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .menu a:hover {
+    color: #ccc;
+  }
+  
+  .menu.show {
+    display: block;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: 0;
+  }
+
+/****************
+Aquí termina la barra de navegación
+*****************/
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -70,46 +120,4 @@ nav a:hover {
         --input: 240 3.7% 15.9%;
         --ring: 240 4.9% 83.9%;
 	}
-}
-      
-.menu-toggle {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.menu-toggle i {
-  font-size: 24px;
-  color: #fff;
-}
-
-.menu {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  margin-bottom: 10px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.menu a:hover {
-  color: #ccc;
-}
-
-.menu.show {
-  display: block;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
 }
