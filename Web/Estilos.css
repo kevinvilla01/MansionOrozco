@@ -121,6 +121,18 @@ Aquí termina la barra de navegación
     font-weight: bold;
 }
 
+#QS {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(11, 15, 39), rgb(255, 255, 255), rgb(255, 255, 255)); /* Degradado horizontal de rojo a amarillo a verde */
+    height: 100vh; 
+    margin: 0;
+  }
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;
