@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inventario Hotel</h1>
+        <div class="tabs">
+            <button class="tab-button" onclick="openTab(event, 'products')">Productos</button>
+            <button class="tab-button" onclick="openTab(event, 'users')">Usuarios</button>
+            <button class="tab-button" onclick="openTab(event, 'rooms')">Habitaciones</button>
+        </div>
+
+        <!-- Productos -->
+        <div id="products" class="tab-content">
+            <form id="product-form">
+                <input type="hidden" id="product_id">
+                <label for="product_name">Nombre:</label>
+                <input type="text" id="product_name" name="nombre" required>
+                <label for="product_description">Descripción:</label>
+                <textarea id="product_description" name="descripcion" required></textarea>
+                <label for="product_category">Categoría:</label>
+                <input type="text" id="product_category" name="categoria" required>
+                <label for="product_price">Precio Unitario:</label>
+                <input type="number" id="product_price" name="precio_unitario" required>
+                <label for="product_stock_total">Stock Total:</label>
+                <input type="number" id="product_stock_total" name="stock_total" required>
+                <label for="product_stock_min">Stock Mínimo:</label>
+                <input type="number" id="product_stock_min" name="stock_min" required>
+                <button type="submit" id="product-submit-btn">Añadir Producto</button>
+            </form>
+            <table id="product-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Categoría</th>
+                        <th>Precio Unitario</th>
+                        <th>Stock Total</th>
+                        <th>Stock Mínimo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos de productos -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Usuarios -->
+        <div id="users" class="tab-content">
+            <form id="user-form">
+                <input type="hidden" id="user_id">
+                <label for="user_name">Nombre:</label>
+                <input type="text" id="user_name" name="nombre" required>
+                <label for="user_lastname">Apellido:</label>
+                <input type="text" id="user_lastname" name="apellido" required>
+                <label for="user_email">Correo:</label>
+                <input type="email" id="user_email" name="correo" required>
+                <label for="user_phone">Teléfono:</label>
+                <input type="text" id="user_phone" name="telefono" required>
+                <label for="user_role">Rol:</label>
+                <select id="user_role" name="rol" required>
+                    <option value="trabajador">Trabajador</option>
+                    <option value="gerente">Gerente</option>
+                </select>
+                <label for="user_username">Username:</label>
+                <input type="text" id="user_username" name="username" required>
+                <label for="user_password">Password:</label>
+                <input type="password" id="user_password" name="passwd" required>
+                <button type="submit" id="user-submit-btn">Añadir Usuario</button>
+            </form>
+            <table id="user-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Rol</th>
+                        <th>Username</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos de usuarios -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Habitaciones -->
+        <div id="rooms" class="tab-content">
+            <form id="room-form">
+                <input type="hidden" id="room_id">
+                <label for="room_number">Número:</label>
+                <input type="text" id="room_number" name="numero" required>
+                <label for="room_type">Tipo:</label>
+                <input type="text" id="room_type" name="tipo" required>
+                <label for="room_capacity">Capacidad:</label>
+                <input type="number" id="room_capacity" name="capacidad" required>
+                <label for="room_description">Descripción:</label>
+                <textarea id="room_description" name="descripcion" required></textarea>
+                <button type="submit" id="room-submit-btn">Añadir Habitación</button>
+            </form>
+            <table id="room-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Número</th>
+                        <th>Tipo</th>
+                        <th>Capacidad</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos de habitaciones -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
