@@ -195,7 +195,14 @@ Aquí termina la barra de navegación
     font-weight: bold;
 }
 
-.contenedor {
+#T5N {
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenedor2 {
     display: flex;
     align-items: center;
 }
@@ -206,11 +213,18 @@ Aquí termina la barra de navegación
     margin-right: 20px;
 }
 
+#imagen4 {
+    width: 90%;
+    height: 130%;
+    margin-left: 20px;
+}
+
 #imagen3 {
     width: 100%;
     height: auto;
     display: block;
 }
+
 
 .texto {
     font-size: 20px;
