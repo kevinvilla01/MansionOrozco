@@ -190,7 +190,7 @@ Aquí termina la barra de navegación
 
 #T4N {
     color: #fff;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
     font-weight: bold;
 }
@@ -200,6 +200,7 @@ Aquí termina la barra de navegación
     font-size: x-large;
     text-align: center;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .contenedor2 {
@@ -207,16 +208,16 @@ Aquí termina la barra de navegación
     align-items: center;
 }
 
-#imagen2 {
-    width: 40%;
-    height: 50%;
+.contenedor3 {
+    display: inline-block;
+
     margin-right: 20px;
 }
 
-#imagen4 {
-    width: 90%;
-    height: 130%;
-    margin-left: 20px;
+#imagen2 {
+    width: 40%;
+    height: 40%;
+    margin-right: 20px;
 }
 
 #imagen3 {
@@ -225,9 +226,35 @@ Aquí termina la barra de navegación
     display: block;
 }
 
+#imagen4 {
+    width: 90%;
+    height: 130%;
+    margin-left: 20px;
+}
+
+#insta #tel {
+    float: left;
+    width: 40%;
+    height: 50%;
+    margin-right: 20px;
+}
+
+#ubi {
+    float: left;
+    width: 20%;
+    height: 30%;
+    margin-right: 20px;
+}
 
 .texto {
     font-size: 20px;
+}
+
+#img-pie {
+    width: 15%;
+    height: 25%;
+    display: block;
+    margin: 0 auto;
 }
 
 @layer base {
