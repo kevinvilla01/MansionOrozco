@@ -17,8 +17,11 @@ Estilos de la barra de navegación
 }
 
 nav {
+    width: 100%;
     font-family: Arial;
     font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -111,8 +114,23 @@ nav a:hover {
   *{
       margin: 0;
       padding: 0;
-      box-sizing: 0;
+      box-sizing: border-box;
   }
+
+#idioma {
+    text-align: center;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+#idioma #menu-des {
+    display: none;
+}
+
+#idioma:hover > #menu-des {
+    display: block;
+}
 
 /****************
 Aquí termina la barra de navegación
@@ -121,17 +139,82 @@ Aquí termina la barra de navegación
     font-weight: bold;
 }
 
+#QST {
+    background-color:#3F4045 ;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+
 #QS {
     width: 100%;
     height: auto;
     display: block;
 }
 
-body {
-    background: linear-gradient(to bottom, rgb(11, 15, 39), rgb(255, 255, 255), rgb(255, 255, 255)); /* Degradado horizontal de rojo a amarillo a verde */
+#Cuerpo {
+    background: linear-gradient(to bottom, #000, #02111b, #ffffff); /* Degradado horizontal de rojo a amarillo a verde */
     height: 100vh; 
     margin: 0;
-  }
+}
+
+#Nosotros {
+    background-color: #02111B;
+}
+
+#T1N
+{
+    margin-top: 40px;
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+#T2N
+{
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+#T3N
+{
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+#T4N {
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+#imagen2 {
+    width: 40%;
+    height: 50%;
+    margin-right: 20px;
+}
+
+#imagen3 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.texto {
+    font-size: 20px;
+}
 
 @layer base {
 	:root {
