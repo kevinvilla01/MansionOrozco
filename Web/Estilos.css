@@ -1,3 +1,7 @@
+head {
+    font-family: Arial;
+}
+
 body {
     font-family: Arial;
 }
@@ -154,7 +158,7 @@ Aquí termina la barra de navegación
 }
 
 #Cuerpo {
-    background: linear-gradient(to bottom, #000, #02111b, #ffffff); /* Degradado horizontal de rojo a amarillo a verde */
+    background: linear-gradient(to bottom, #000, #02111b, #ffffff);
     height: 100vh; 
     margin: 0;
 }
@@ -269,6 +273,13 @@ Aquí termina la barra de navegación
     height: 25%;
     display: block;
     margin: 0 auto;
+}
+
+.final {
+    width: 100%;
+    height: 3cm;
+    background: linear-gradient(to bottom, #02111B, #02111b, #ffffff);
+
 }
 
 @layer base {
