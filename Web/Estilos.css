@@ -209,9 +209,24 @@ Aquí termina la barra de navegación
 }
 
 .contenedor3 {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+  
+#ubi, #insta, #tel {
+    margin-right: 10px;
+    width: 100px; 
+    height: 100px;
+}
 
-    margin-right: 20px;
+#insta #tel {
+    margin-left: 0%;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #imagen2 {
@@ -232,22 +247,21 @@ Aquí termina la barra de navegación
     margin-left: 20px;
 }
 
-#insta #tel {
-    float: left;
-    width: 40%;
-    height: 50%;
-    margin-right: 20px;
+.texto1 {
+    font-size: small;
+    margin-right: 0px;
 }
 
-#ubi {
-    float: left;
-    width: 20%;
-    height: 30%;
-    margin-right: 20px;
+.texto2 .texto3 {
+    font-size: medium;
 }
 
-.texto {
-    font-size: 20px;
+.texto2 {
+    margin-left: 0;
+}
+
+.texto3 {
+    margin-right: 10%;
 }
 
 #img-pie {
