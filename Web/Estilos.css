@@ -1,0 +1,330 @@
+head {
+    font-family: Arial;
+}
+
+body {
+    font-family: Arial;
+}
+
+/****************
+Estilos de la barra de navegación
+*****************/
+#logo {
+    display: inline-block;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.image-container {
+    display: flex;
+    align-items: left; /* Align items vertically */
+}
+
+nav {
+    width: 100%;
+    font-family: Arial;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    background-color: var(dark var(--background));
+}
+
+#MO0 {
+    font-size: x-large;
+}
+
+#MO1 {
+    font-size: large;   
+    display: inline-block;
+    vertical-align: middle; 
+    margin-bottom: 2px;
+    text-decoration: underline;
+}
+
+#MO2{
+  list-style: none;
+  margin: 0;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#MO3 {
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+#MO {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ecbd31;
+}
+
+#MO4 #menu-des {
+    display: none;
+}
+
+#MO4:hover > #menu-des {
+    display: block;
+}
+
+#menu-des {
+    float:right ;
+    text-align: center;
+}
+
+.menu-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-toggle i {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .menu a:hover {
+    color: #ccc;
+  }
+  
+  .menu.show {
+    display: block;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+#idioma {
+    text-align: center;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+#idioma #menu-des {
+    display: none;
+}
+
+#idioma:hover > #menu-des {
+    display: block;
+}
+
+/****************
+Aquí termina la barra de navegación
+*****************/
+#IS {
+    font-weight: bold;
+}
+
+#barra2 {
+    background-color:#3F4045 ;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+
+#QS {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#Cuerpo {
+    background: linear-gradient(to bottom, #000, #02111b, #ffffff);
+    height: 100vh; 
+    margin: 0;
+}
+
+#Nosotros {
+    background-color: #02111B;
+}
+
+#T1N
+{
+    margin-top: 40px;
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+#T2N
+{
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+#T3N
+{
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+#T4N {
+    color: #fff;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+#T5N {
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.contenedor2 {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor3 {
+    display: flex;
+    align-items: center;
+}
+  
+#ubi, #insta, #tel {
+    margin-right: 10px;
+    width: 100px; 
+    height: 100px;
+}
+
+#insta #tel {
+    margin-left: 0%;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imagen2 {
+    width: 40%;
+    height: 40%;
+    margin-right: 20px;
+}
+
+#imagen3 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#imagen4 {
+    width: 90%;
+    height: 130%;
+    margin-left: 20px;
+}
+
+.texto1 {
+    font-size: small;
+    margin-right: 0px;
+}
+
+.texto2 .texto3 {
+    font-size: medium;
+}
+
+.texto2 {
+    margin-left: 0;
+}
+
+.texto3 {
+    margin-right: 10%;
+}
+
+#img-pie {
+    width: 15%;
+    height: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+.final {
+    width: 100%;
+    height: 3cm;
+    background: linear-gradient(to bottom, #02111B, #02111b, #ffffff);
+
+}
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+        --foreground: 240 10% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 240 4.8% 95.9%;
+        --secondary-foreground: 240 5.9% 10%;
+        --muted: 240 4.8% 95.9%;
+        --muted-foreground: 240 3.8% 46.1%;
+        --accent: 240 4.8% 95.9%;
+        --accent-foreground: 240 5.9% 10%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+        --ring: 240 5.9% 10%;
+        --radius: 0.5rem;
+		
+    }
+	.dark {
+		--background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 240 10% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 240 10% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 5.9% 10%;
+        --secondary: 240 3.7% 15.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 240 3.7% 15.9%;
+        --muted-foreground: 240 5% 64.9%;
+        --accent: 240 3.7% 15.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 3.7% 15.9%;
+        --input: 240 3.7% 15.9%;
+        --ring: 240 4.9% 83.9%;
+	}
+}
