@@ -686,12 +686,17 @@ Aquí termina la barra de navegación
     top: 50px;
 }
 /**aquí inicia los diseños de contacto**/
-#contacto
+#contact_part1
 {
     background-color: black;
 }
-#contact_img
+#contact_map
 {
-    
+    position: absolute;
+    right: 0%;
+    top: 258px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
 }
 /**aquí termina los estilos de contacto**/
