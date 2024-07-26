@@ -1,3 +1,7 @@
+head {
+    font-family: Arial;
+}
+
 body {
     font-family: Arial;
 }
@@ -139,12 +143,21 @@ Aquí termina la barra de navegación
     font-weight: bold;
 }
 
-#QST {
+#barra2 {
     background-color:#3F4045 ;
     text-align: center;
     color: #fff;
     text-decoration: underline;
     font-size: xx-large;
+}
+
+#barra3 {
+    background: linear-gradient(to bottom, #3F4045, #3F4045, #ffffff) ;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    font-size: xx-large;
+    height: 2.5cm;
 }
 
 #QS {
@@ -154,9 +167,13 @@ Aquí termina la barra de navegación
 }
 
 #Cuerpo {
-    background: linear-gradient(to bottom, #000, #02111b, #ffffff); /* Degradado horizontal de rojo a amarillo a verde */
+    background: linear-gradient(to bottom, #000, #02111b, #ffffff);
     height: 100vh; 
     margin: 0;
+}
+
+#Cuerpo-cat {
+    background-color: #fff;
 }
 
 #Nosotros {
@@ -190,19 +207,48 @@ Aquí termina la barra de navegación
 
 #T4N {
     color: #fff;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
     font-weight: bold;
 }
 
-.contenedor {
+#T5N {
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.contenedor2 {
     display: flex;
+    align-items: center;
+}
+
+.contenedor3 {
+    display: flex;
+    align-items: center;
+}
+  
+#ubi, #insta, #tel {
+    margin-right: 10px;
+    width: 100px; 
+    height: 100px;
+}
+
+#insta #tel {
+    margin-left: 0%;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 #imagen2 {
     width: 40%;
-    height: 50%;
+    height: 40%;
     margin-right: 20px;
 }
 
@@ -212,8 +258,41 @@ Aquí termina la barra de navegación
     display: block;
 }
 
-.texto {
-    font-size: 20px;
+#imagen4 {
+    width: 90%;
+    height: 130%;
+    margin-left: 20px;
+}
+
+.texto1 {
+    font-size: small;
+    margin-right: 0px;
+}
+
+.texto2 .texto3 {
+    font-size: medium;
+}
+
+.texto2 {
+    margin-left: 0;
+}
+
+.texto3 {
+    margin-right: 10%;
+}
+
+#img-pie {
+    width: 15%;
+    height: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+.final {
+    width: 100%;
+    height: 3cm;
+    background: linear-gradient(to bottom, #02111B, #02111b, #ffffff);
+
 }
 
 @layer base {
