@@ -685,3 +685,13 @@ Aquí termina la barra de navegación
     position: relative;
     top: 50px;
 }
+/**aquí inicia los diseños de contacto**/
+#contacto
+{
+    background-color: black;
+}
+#contact_img
+{
+    
+}
+/**aquí termina los estilos de contacto**/
