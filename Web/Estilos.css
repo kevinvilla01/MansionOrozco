@@ -151,6 +151,15 @@ Aquí termina la barra de navegación
     font-size: xx-large;
 }
 
+#barra3 {
+    background: linear-gradient(to bottom, #3F4045, #3F4045, #ffffff) ;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    font-size: xx-large;
+    height: 2.5cm;
+}
+
 #QS {
     width: 100%;
     height: auto;
@@ -161,6 +170,10 @@ Aquí termina la barra de navegación
     background: linear-gradient(to bottom, #000, #02111b, #ffffff);
     height: 100vh; 
     margin: 0;
+}
+
+#Cuerpo-cat {
+    background-color: #fff;
 }
 
 #Nosotros {
