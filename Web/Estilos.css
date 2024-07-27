@@ -167,9 +167,10 @@ Aquí termina la barra de navegación
 }
 
 #Cuerpo {
-    background: linear-gradient(to bottom, #000, #02111b, #ffffff);
+    background-color: #000;
     height: 100vh; 
     margin: 0;
+    padding: 0;
 }
 
 #Cuerpo-cat {
@@ -295,6 +296,73 @@ Aquí termina la barra de navegación
 
 }
 
+.HS-container {
+    height: 400px;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #F5F1ED;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.contenido {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.bed-icon {
+    float: left;
+    margin-left: 40px;
+}
+
+.bed-icon img {
+    width: 50%;
+    height: 50%;
+    fill: #333;
+}
+
+.detalles {
+    margin-left: 0;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+
+.detalles h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.detalles ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.detalles li {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.people-icon {
+    float: left;
+    margin-right: 20px;
+}
+
+.people-icon img {
+    width: 120px;
+    height: 120px;
+    fill: #333;
+}
+
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -341,3 +409,302 @@ Aquí termina la barra de navegación
         --ring: 240 4.9% 83.9%;
 	}
 }
+
+#Bienvenida {
+    background: linear-gradient(to top, #ffffff, #f3f3f3, #000000);
+    width:100%;
+    height:955px;
+}
+
+
+.img_hotel
+{
+    position: relative;
+    z-index: -1;
+}
+
+#cont1
+{
+    width: 100%;
+    height: 400;
+    position: absolute;
+    top: 260px;
+    left: 80px;
+    z-index: 1;
+}
+
+.txt
+{
+    color: white;
+}
+
+#txt1
+{
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    position: relative;
+    top: 320px;
+}
+
+#txt2
+{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 110px;
+    position: relative;
+    top: 300px;
+}
+
+#txt3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 35px;
+    position: relative;
+    top: 300px;
+}
+
+.img_deg
+{
+    position: relative;
+    top: -4px;
+    z-index: -1;
+}
+
+.cont2
+{
+    position: absolute;
+    width: 100%;
+    height: 755px;
+    top: 1300px;
+    left: 80px;
+}
+
+#txt4
+{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 110px;
+}
+
+#txt5
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    position: relative;
+    
+}
+
+.cont3
+{
+    width: 100%;
+    height: 955px;
+    background-color: #333333;
+    position: relative;
+    text-align: center;
+    top: -55px;
+    z-index: -1;
+}
+
+.scont
+{
+    width: 570px;
+    height: 570px;
+    position: relative;
+    top: 130px;
+    display: inline-block;
+    z-index: 1;
+}
+
+#promo1
+{
+    background-image: url(rest2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#promo2
+{
+    background-image: url(yate2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#promo3
+{
+    background-image: url(malecon2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.promotxt
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: 410px;
+}
+
+#txt6
+{
+    color:white;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 70px;
+    position: relative;
+    top: 50px;
+}
+
+#txt7
+{
+    color:white;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 34px;
+    position: relative;
+    top: 145px;
+    left: 650px;
+}
+
+.img_deg2
+{
+    position: relative;
+    top: -55px;
+    z-index: -1;
+}
+
+.scont2
+{
+    background-color: white;
+    border: 2px solid black;
+    width: 450px;
+    height: 610px;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont4
+{
+    position: relative;
+    text-align: center;
+    top: -1000px;
+    z-index: -1;
+}
+
+#txt8
+{
+    color:black;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 70px;
+}
+
+#hab1
+{
+    position: relative;
+    left: -90px;
+    z-index: 1;
+    text-align: center;
+}
+
+#hab3
+{
+    position: relative;
+    left: 90px;
+}
+
+.txt9
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    position: relative;
+    top: 25px;
+}
+
+.img_deg3
+{
+    position: relative;
+    top: 148px;
+    left: -2px;
+    z-index: -1;
+}
+
+.cont5
+{
+    position: relative;
+    text-align: center;
+    top: -600px;
+    z-index: -1;
+}
+.scont3
+{
+    height: 370px;
+    width: 350px;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+#txt10
+{
+    color: white;
+    position: relative;
+    top: -120px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 50px;
+}
+.txt_extras
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: 70px;
+}
+
+.img_extras
+{
+    position: relative;
+    top: 50px;
+}
+/**aquí inicia los diseños de contacto**/
+.contact_part1
+{
+    background: black;
+    width: 100%;
+    height: 560px;
+}
+#contact_map
+{
+    position: absolute;
+    right: 0%;
+    top: 259px;
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    border-radius: 10%;
+}
+#contact_img1
+{
+    position: absolute;
+    left: 0%;
+    top: 259px;
+}
+/**aquí termina los estilos de contacto**/
