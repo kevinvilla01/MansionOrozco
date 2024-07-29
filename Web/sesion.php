@@ -1,25 +1,28 @@
 <?php
-require 'conection.php';
-
 session_start();
+require 'config.php';
 
-$user = $_POST['username'];
-$pw = $_POST['password'];
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-$query = ("SELECT * FROM USUARIOS WHERE username='$user' AND passwd='$pw'");
+    if (!empty($username) && !empty($password)) {
+        $stmt = $pdo->prepare('SELECT * FROM USUARIOS WHERE username = :username');
+        $stmt->bindParam(':username', $username);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-$consulta = pg_query($conection, $query);
-$cantidad = pg_num_rows($consulta);
-
-if($cantidad > 0){
-
-    $_SESSION['username']=$user;
-    header('Location:ingreso.php');
-
+        if ($user && password_verify($password, $user['passwd'])) {
+            $_SESSION['user_id'] = $user['id_usuario'];
+            $_SESSION['username'] = $user['username'];
+            $_SESSION['rol'] = $user['rol'];
+            header("Location: intranet.php");
+            exit;
+        } else {
+            echo "Nombre de usuario o contraseña incorrectos.";
+        }
+    } else {
+        echo "Por favor complete ambos campos.";
+    }
 }
-
-else{
-    echo "Datos incorrectos";
-}
-
 ?>

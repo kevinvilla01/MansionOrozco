@@ -1,7 +1,11 @@
 <?php
-
 session_start();
-$user = $_SESSION['username'];
 
-echo "<h2>Bienvenido $user </h2>";
+if (!isset($_SESSION['user_id'])) {
+    header("Location: Login.html");
+    exit;
+}
+
+// Resto del contenido de la página intranet
+echo "Bienvenido, " . $_SESSION['username'];
 ?>

@@ -1,10 +1,14 @@
 <?php
+// Configuración de la base de datos
+$host = 'localhost'; // o la dirección de tu servidor de base de datos
+$dbname = 'nombre_base_datos';
+$user = 'tu_usuario';
+$password = 'tu_contraseña';
 
-$host = 'localhost';
-$db = 'MansionOrozco';
-$user = 'postgres';
-$pw = 'Ahsy1zhdg123';
-
-$conection = pg_connect("host=host dbname=$db user=$user password=#pw");
-
+try {
+    $pdo = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Error de conexión: " . $e->getMessage());
+}
 ?>
