@@ -712,7 +712,7 @@ Aquí termina la barra de navegación
     float: inline-start;
     width: 935px;
     height: 565px;
-    background-color: aqua;
+    
     margin: 5px;
 }
 .ubi_part1-3
@@ -725,6 +725,10 @@ Aquí termina la barra de navegación
 }
 #ubi_text1
 {
+    font-family: Arial;
+    font-size: 24px;
+    color: #fff;
     text-align: center;
+    margin-top: 30px;
 }
 /**aquí termina los estilos de ubicación**/
