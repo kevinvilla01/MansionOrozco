@@ -4,7 +4,7 @@
 }
 
 .cont1{
-    background-color: black;
+    background: linear-gradient(to top, #000000,#202020,#404040);
     width: 100%;
     height: 100vh;
 }
@@ -14,6 +14,9 @@
     position: absolute;
     top: 50px;
     font-size: 70px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
 }
 
 .cont_txt1{
@@ -33,6 +36,10 @@
 .txtc2{
     color: white;
     font-size: 35px;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .txtc3{
@@ -54,4 +61,58 @@
 .cont_txt3{
     color: white;
     font-size: 40px;
+    position: absolute;
+    top: 250px;
+    left: 910px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont2{
+    position: absolute;
+    top: 250px;
+    left: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.sub_cont{
+    height: 100px;
+    width: 100px;
+}
+
+#scont1{
+    background-image: url(fotos/img1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#scont2{
+    background-image: url(fotos/img2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#scont3{
+    background-image: url(fotos/img3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#scont4{
+    position: absolute;
+    top: 470px;
+    background-image: url(fotos/img4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
