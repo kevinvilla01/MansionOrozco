@@ -779,3 +779,50 @@ Aquí termina la barra de navegación
     
     top: 50px;
 }
+/**aquí inicia los diseños de ubicación**/
+.ubi_part1
+{
+    margin: auto;
+    background-color: black;
+    width: 100%;
+    height: 570px;
+}
+#ubi_map
+{
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    border-radius: 10%;
+}
+.ubi_part1-1
+{
+    margin-top: 5px;
+    margin-left: 5px; 
+    width: 255px;
+    height: 565px;
+    float: left;
+}
+.ubi_part1-2
+{
+    float: inline-start;
+    width: 935px;
+    height: 565px;
+    
+    margin: 5px;
+}
+.ubi_part1-3
+{
+    margin-top: 5px;
+    margin-right: 5px;
+    width:255px; 
+    height:565px;
+    float: right;
+}
+#ubi_text1
+{
+    font-family: Arial;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+/**aquí termina los estilos de ubicación**/
