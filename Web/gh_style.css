@@ -11,7 +11,7 @@
     height: 400;
     position: absolute;
     top: 260px;
-    left: 80px;
+    
     z-index: 1;
 }
 
@@ -63,7 +63,7 @@
     width: 1860px;
     height: 755px;
     top: 1300px;
-    left: 80px;
+    
 }
 
 #txt4
@@ -155,7 +155,7 @@
     font-size: 34px;
     position: relative;
     top: 145px;
-    left: 650px;
+    
 }
 
 .img_deg2
@@ -198,7 +198,7 @@
 #hab1
 {
     position: relative;
-    left: -90px;
+    
     z-index: 1;
     text-align: center;
 }
@@ -206,7 +206,7 @@
 #hab3
 {
     position: relative;
-    left: 90px;
+    
 }
 
 .txt9
@@ -219,9 +219,9 @@
 
 .img_deg3
 {
-    position: relative;
+    
     top: 148px;
-    left: -2px;
+    
     z-index: -1;
 }
 
