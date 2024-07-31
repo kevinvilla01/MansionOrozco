@@ -304,10 +304,43 @@ Aquí termina la barra de navegación
     padding: 20px;
 }
 
+.HS-container:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.HG-container {
+    height: 400px;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #F5F1ED;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.HG-container:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.S-container {
+    height: 400px;
+    width: 90%;
+    margin: 50px auto;
+    background-color: #F5F1ED;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.S-container:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
 .title {
-    font-size: xx-large;
-    font-weight: bold;
-    margin-left: 40px;
+    font-size: 80px;
+    font-weight: 80;
+    margin-left: 140px;
     margin-bottom: 20px;
 }
 
