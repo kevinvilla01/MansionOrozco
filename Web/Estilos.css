@@ -167,7 +167,6 @@ Aquí termina la barra de navegación
 }
 
 #Cuerpo {
-    background-color: #000;
     height: 100vh; 
     margin: 0;
     padding: 0;
@@ -411,7 +410,7 @@ Aquí termina la barra de navegación
 }
 
 #Bienvenida {
-    background: linear-gradient(to top, #ffffff, #f3f3f3, #000000);
+    background: linear-gradient(to top, #333333, #ffffff, #ffffff, #ffffff, #f3f3f3, #000000);
     width:100%;
     height:955px;
 }
@@ -646,6 +645,19 @@ Aquí termina la barra de navegación
     text-align: center;
 }
 
+#Alojamiento-G {
+    
+    height: 800px; 
+    width: 100%;
+}
+
+#AG {
+    color: #000;
+    font-weight: 110;
+    font-size: 90px;
+    text-align: center;
+}
+
 .container-slider {
     position: relative;
     width: 100%;
@@ -721,6 +733,89 @@ Aquí termina la barra de navegación
     color: black;
 }
 
+.slider-track .slide {
+    position: relative;
+}
+  
+.slider-track .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.slider-track .slide .texto-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+  
+.slider-track .slide:hover .texto-hover {
+   opacity: 1;
+}
+
+.container-f {
+    background: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #000000, #ffffff);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 600px; 
+    width: 100%;
+}
+
+#TF {
+    text-align: center;
+    font-size: 40px;
+    background-color: #000;
+    color: #fff;
+}
+  
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+  
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#logo-in {
+    margin: 0 auto;
+    display: block;
+    width: 60%;
+    height: 30vh;
+    object-fit: contain;
+}
+
+#box-l {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+  
+.box .text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+}
+
 .txt9
 {
 
@@ -737,53 +832,11 @@ Aquí termina la barra de navegación
     z-index: -1;
 }
 
-.cont5
-{
-    
-    text-align: center;
-    top: -600px;
-    z-index: -1;
-}
-.scont3
-{
-    height: 370px;
-    width: 350px;
-    
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-}
-
-#txt10
-{
-    color: white;
-    
-    top: -120px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 50px;
-}
-.txt_extras
-{
-    color: white;
-
-    font-size: 30px;
-    
-    top: 70px;
-}
-
-.img_extras
-{
-    
-    top: 50px;
-}
 /**aquí inicia los diseños de ubicación**/
 .ubi_part1
 {
     margin: auto;
-    background-color: black;
+    background-color: #000;
     width: 100%;
     height: 570px;
 }

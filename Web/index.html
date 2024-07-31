@@ -124,36 +124,59 @@
     </div>
 
     
-            
-    <div class="container-slider">
-        <div class="slider-track">
-            <div class="slide">
-                <img src="habitación__1.jpg" alt="Habitación 1">
+    <div #Alojamiento-G style="background: linear-gradient(to bottom, #333333, #ffffff, #ffffff, #ffffff, #ffffff, #000000) !important;">
+        <h2 id="AG">Alojamiento</h2>
+        <div class="container-slider">
+            <div class="slider-track">
+                <div class="slide">
+                    <img src="habitación__1.jpg" alt="Habitación 1">
+                    <div class="texto-hover">
+                        <h3>Habitación 1</h3>
+                        <p>Descripción Breve</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="habitación__2.jpg" alt="Habitación 2">
+                    <div class="texto-hover">
+                        <h3>Habitación 2</h3>
+                        <p>Descripción Breve</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="habitación__3.jpg" alt="Habitación 3">
+                    <div class="texto-hover">
+                        <h3>Habitación 3</h3>
+                        <p>Descripción Breve</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="habitación_4.png" alt="Habitación 4">
+                    <div class="texto-hover">
+                        <h3>Habitación 4</h3>
+                        <p>Descripción Breve</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="habitación_5.png" alt="Habitación 5">
+                    <div class="texto-hover">
+                        <h1>Habitación 5</h1>
+                        <p>Descripción Breve</p>
+                    </div>
+                </div>
             </div>
-            <div class="slide">
-                <img src="habitación__2.jpg" alt="Habitación 2">
-            </div>
-            <div class="slide">
-                <img src="habitación__3.jpg" alt="Habitación 3">
-            </div>
-            <div class="slide">
-                <img src="habitación_4.png" alt="Habitación 4">
-            </div>
-            <div class="slide">
-                <img src="habitación_5.png" alt="Habitación 5">
-            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <br>
+            <ul class="pagination">
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
         </div>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
-        <br>
-        <ul class="pagination">
-            <li class="active">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ul>
-    </div>
+        <br><br><br><br>
+    </div>    
     
     <script>
         const sliderTrack = document.querySelector(".slider-track");
@@ -203,34 +226,37 @@
         });
     </script>
 
-    <div class="cont5">
-        <h1 id="txt10">DESPLÁCESE POR LA PÁGINA PARA DESCUBRIR MÁS</h1>
-
-        <div class="scont3" width="1860px" height="955px">
-            <img src="ubicación.png" alt="ubicación" width="210" height="210" class="img_extras">
-            <p class="txt_extras">UBICACIÓN</p>
-        </div>
-
-        <div class="scont3" width="1860px" height="955px">
-            <img src="cama.png" alt="cama" width="210" height="210"class="img_extras">
-            <p class="txt_extras">ALOJAMIENTO</p>
-        </div>
-
-        <div class="scont3" width="1860px" height="955px">
-            <img src="MEDIA 2.png" alt="media" width="210" height="210" class="img_extras">
-            <p class="txt_extras">FOTOS Y VIDEOS</p>
-        </div>
-            
-        <div class="scont3" width="1860px" height="955px">
-            <img src="oferta.png" alt="oferta" width="210" height="210" class="img_extras">
-            <p class="txt_extras">OFERTAS</p>
-        </div>
-
-        <div class="scont3" width="1860px" height="955px">
-            <img src="logoco inver.png" alt="" width="210" height="210" class="img_extras">
-            <p class="txt_extras">¿QUIÉNES SOMOS?</p>
-        </div>
+    <div id="TF">
+        <br>
+        <h1>DESPLÁCESE POR LA PÁGINA PARA DESCUBRIR MÁS</h1>
+        <br><br>
     </div>
-
+    <div class="container-f">
+        <div class="box">
+            <a href="">
+                <img src="ubicación.png" alt="Ubi">
+                <div class="text">UBICACIÓN</div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="">
+                <img src="cama.png" alt="Bed">
+                <div class="text">ALOJAMIENTO</div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="">
+                <img src="oferta.png" alt="Promo">
+                <div class="text">OFERTAS</div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="AboutUs.html">
+                <img id="logo-in" src="Logo-invertido.png" alt="Logo">
+                <div class="text">¿QUIÉNES SOMOS</div>
+            </a>
+        </div>
+        <br><br>
+    </div>
 </body>
 </html>
