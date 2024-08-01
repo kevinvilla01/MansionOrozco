@@ -569,7 +569,7 @@ Aquí termina la barra de navegación
 
 #promo1
 {
-    background-image: url(rest2.jpg);
+    background-image: url(yate2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
@@ -578,7 +578,7 @@ Aquí termina la barra de navegación
 
 #promo2
 {
-    background-image: url(yate2.jpg);
+    background-image: url(rest2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
@@ -588,6 +588,15 @@ Aquí termina la barra de navegación
 #promo3
 {
     background-image: url(malecon2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* radio de la esquina de la imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* sombra de la imagen */
+}
+
+#promo4
+{
+    background-image: url(Fachada.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
@@ -605,6 +614,11 @@ Aquí termina la barra de navegación
 }
 
 #promo3:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#promo4:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
