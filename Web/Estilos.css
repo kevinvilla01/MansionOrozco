@@ -924,6 +924,20 @@ Aquí termina la barra de navegación
     height:565px;
     justify-items: end;
 }
+.ubi_part1-1-1
+{
+    background-color: orange;
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+.ubi_part1-1-2
+{
+    background-color: green;
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
 #ubi_text1
 {
     font-family: Arial;
