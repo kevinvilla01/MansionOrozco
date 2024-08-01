@@ -884,7 +884,7 @@ Aquí termina la barra de navegación
     margin: auto;
     background: linear-gradient(to top, #000000,#202020,#404040);
     width: 100%;
-    height: 570px;
+    height: 50%;
 }
 #ubi_map
 {
@@ -924,39 +924,19 @@ Aquí termina la barra de navegación
     height:565px;
     justify-items: end;
 }
-.ubi_part1-1-1
-{
-    background-color: orange;
-    width: 100%;
-    height: 70px;
-    display: flex;
-}
-.ubi_part1-1-2
-{
-    background-color: green;
-    width: 100%;
-    height: 400px;
-    display: flex;
-}
 #ubi_text1
 {
     font-family: Arial;
     font-size: 24px;
     color: #ffffff;
     text-align: center;
-    margin-top: 20px;
-}
-#ubi_subtitle1
-{
-    font-family: Arial;
-    font-size: 28px;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #barra10
 {
-    background: linear-gradient(to top, #252525,#404040);
+    background: linear-gradient(to top, #252525,#404040,#626262);
     font-family: Arial;
     font-size: 36px;
     color: #ffffff;
@@ -967,9 +947,9 @@ Aquí termina la barra de navegación
 {
     display: flex;
     margin: auto;
-    background: linear-gradient(to top, #ffffff,#535353,#404040);
+    background: linear-gradient(to top, #ffffff,#959595,#606060, #4e4e4e);
     width: 100%;
-    height: 570px;
+    height: 700px;
 }
 .ubi_part2-1
 {
@@ -978,14 +958,16 @@ Aquí termina la barra de navegación
     background-color: red;
     width: 33.3%;
     height: 285px;
+    align-items: start;
 }
 .ubi_part2-2
 {
-    font-display: flex;
+    display: flex;
     justify-items: center;
     background-color: blueviolet;
     width: 33.4%;
     height: 285px;
+    align-items: start;
 }
 .ubi_part2-3
 {
@@ -994,5 +976,50 @@ Aquí termina la barra de navegación
     background-color: blue;
     width: 33.3%;
     height: 285px;
+    align-items: start;
+}
+.ubi_part2-4
+{
+    background-color: navy;
+    width: 16.6666666667%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+}
+.ubi_part2-5
+{
+    background-color: darkred;
+    width: 16.6666666667%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+}.ubi_part2-6
+{
+    background-color: hotpink;
+    width: 16.6666666667%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+}.ubi_part2-7
+{
+    background-color: gold;
+    width: 16.6666666667%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+}.ubi_part2-8
+{
+    background-color: coral;
+    width: 16.6666666667%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+}.ubi_part2-9
+{
+    background-color: bisque;
+    width: 16.6666666667%;
+    height: 50%;
+    display: flex;
+    align-items: end;
 }
 /**aquí termina los estilos de ubicación**/
