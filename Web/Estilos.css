@@ -394,6 +394,18 @@ Aquí termina la barra de navegación
     fill: #333;
 }
 
+.all {
+    background-color:#F5F1ED ;
+    width: 100%;
+    height: 40vh;
+}
+
+#politics {
+    background-color:#ffffff ;
+    width: 100%;
+    height: 100vh;
+}
+
 
 @layer base {
 	:root {
