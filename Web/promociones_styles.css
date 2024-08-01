@@ -1,0 +1,60 @@
+* { margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cont1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #ffffff 90%, #BFBFBF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.txt1{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.sub_cont{
+    width: 400px;
+    height: 700px;
+    position: relative;
+    top: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+}
+
+#oferta1{
+    background-image: url(yate2.jpg);
+}
+
+#oferta2{
+    background-image: url(malecon2.jpg);
+}
+
+#oferta3{
+    background-image: url(rest2.jpg);
+}
+
+#oferta4{
+    background-image: url(Fachada.jpg);
+}
+
+.txt2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 600px;
+    font-size: 35px;
+}
