@@ -167,7 +167,6 @@ Aquí termina la barra de navegación
 }
 
 #Cuerpo {
-    background-color: #000;
     height: 100vh; 
     margin: 0;
     padding: 0;
@@ -305,10 +304,43 @@ Aquí termina la barra de navegación
     padding: 20px;
 }
 
+.HS-container:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.HG-container {
+    height: 400px;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #F5F1ED;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.HG-container:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.S-container {
+    height: 400px;
+    width: 90%;
+    margin: 50px auto;
+    background-color: #F5F1ED;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.S-container:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
 .title {
-    font-size: xx-large;
-    font-weight: bold;
-    margin-left: 40px;
+    font-size: 80px;
+    font-weight: 80;
+    margin-left: 140px;
     margin-bottom: 20px;
 }
 
@@ -411,7 +443,7 @@ Aquí termina la barra de navegación
 }
 
 #Bienvenida {
-    background: linear-gradient(to top, #ffffff, #f3f3f3, #000000);
+    background: linear-gradient(to top, #333333, #ffffff, #ffffff, #ffffff, #f3f3f3, #000000);
     width:100%;
     height:955px;
 }
@@ -419,7 +451,7 @@ Aquí termina la barra de navegación
 
 .img_hotel
 {
-    position: relative;
+    
     z-index: -1;
 }
 
@@ -429,7 +461,7 @@ Aquí termina la barra de navegación
     height: 400;
     position: absolute;
     top: 260px;
-    left: 80px;
+    
     z-index: 1;
 }
 
@@ -440,37 +472,37 @@ Aquí termina la barra de navegación
 
 #txt1
 {
-    font-family: "Italianno", cursive;
+    margin-left: 5%;
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
-    position: relative;
+    
     top: 320px;
 }
 
 #txt2
 {
-    font-family: "Inter", sans-serif;
+    margin-left: 5%;
     font-style: normal;
     font-weight: 100;
     font-size: 110px;
-    position: relative;
+    
     top: 300px;
 }
 
 #txt3
 {
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
     font-style: normal;
     font-weight: 200;
     font-size: 35px;
-    position: relative;
+    
     top: 300px;
 }
 
 .img_deg
 {
-    position: relative;
+    
     top: -4px;
     z-index: -1;
 }
@@ -481,12 +513,12 @@ Aquí termina la barra de navegación
     width: 100%;
     height: 755px;
     top: 1300px;
-    left: 80px;
+    
 }
 
 #txt4
 {
-    font-family: "Inter", sans-serif;
+    margin-left: 5%;
     font-style: normal;
     font-weight: 200;
     font-size: 110px;
@@ -494,11 +526,11 @@ Aquí termina la barra de navegación
 
 #txt5
 {
-    font-family: Arial, Helvetica, sans-serif;
+    
     font-style: normal;
     font-weight: 200;
     font-size: 40px;
-    position: relative;
+    margin-left: 5%;
     
 }
 
@@ -507,7 +539,7 @@ Aquí termina la barra de navegación
     width: 100%;
     height: 955px;
     background-color: #333333;
-    position: relative;
+    
     text-align: center;
     top: -55px;
     z-index: -1;
@@ -515,9 +547,9 @@ Aquí termina la barra de navegación
 
 .scont
 {
-    width: 570px;
-    height: 570px;
-    position: relative;
+    width: 30%;
+    height: 50%;
+    
     top: 130px;
     display: inline-block;
     z-index: 1;
@@ -528,6 +560,8 @@ Aquí termina la barra de navegación
     background-image: url(rest2.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 10px; /* radio de la esquina de la imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* sombra de la imagen */
 }
 
 #promo2
@@ -535,6 +569,8 @@ Aquí termina la barra de navegación
     background-image: url(yate2.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 10px; /* radio de la esquina de la imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* sombra de la imagen */
 }
 
 #promo3
@@ -542,43 +578,64 @@ Aquí termina la barra de navegación
     background-image: url(malecon2.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 10px; /* radio de la esquina de la imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* sombra de la imagen */
 }
+
+#promo1:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#promo2:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#promo3:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
 
 .promotxt
 {
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 25px;
+    margin-top: 10%;
+    position: relative;
+    margin-bottom: 0px;
     color: white;
     font-size: 40px;
-    position: relative;
-    top: 410px;
+    
 }
 
 #txt6
 {
     color:white;
-    font-family: "Inter", sans-serif;
+
     font-style: normal;
     font-weight: 100;
     font-size: 70px;
-    position: relative;
+    position: center;
     top: 50px;
 }
 
 #txt7
 {
+    font-weight: bold;
+    text-decoration: underline;
     color:white;
-    font-family: "Inter", sans-serif;
     font-style: normal;
-    font-weight: 100;
     font-size: 34px;
-    position: relative;
+    float: right;
     top: 145px;
-    left: 650px;
+
+    margin-right: 100px;
 }
 
 .img_deg2
 {
-    position: relative;
+    
     top: -55px;
     z-index: -1;
 }
@@ -589,7 +646,7 @@ Aquí termina la barra de navegación
     border: 2px solid black;
     width: 450px;
     height: 610px;
-    position: relative;
+    
     top: 10px;
     display: inline-block;
     justify-content: center;
@@ -598,7 +655,7 @@ Aquí termina la barra de navegación
 
 .cont4
 {
-    position: relative;
+    
     text-align: center;
     top: -1000px;
     z-index: -1;
@@ -607,7 +664,7 @@ Aquí termina la barra de navegación
 #txt8
 {
     color:black;
-    font-family: "Inter", sans-serif;
+
     font-style: normal;
     font-weight: 100;
     font-size: 70px;
@@ -615,81 +672,204 @@ Aquí termina la barra de navegación
 
 #hab1
 {
-    position: relative;
-    left: -90px;
+    
+    
     z-index: 1;
     text-align: center;
 }
 
-#hab3
-{
+#Alojamiento-G {
+    
+    height: 800px; 
+    width: 100%;
+}
+
+#AG {
+    color: #000;
+    font-weight: 110;
+    font-size: 90px;
+    text-align: center;
+}
+
+.container-slider {
     position: relative;
-    left: 90px;
+    width: 100%;
+    overflow: hidden;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.slider-track {
+    display: flex;
+    width: 500%;
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+    height: 300%;
+}
+
+.slide {
+    width: 20%;
+    height: 500px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.slide img {
+    width:100% ;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.pagination li {
+    list-style: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination li.active {
+    background-color: #fff;
+    color: black;
+}
+
+.slider-track .slide {
+    position: relative;
+}
+  
+.slider-track .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.slider-track .slide .texto-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+  
+.slider-track .slide:hover .texto-hover {
+   opacity: 1;
+}
+
+.container-f {
+    background: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #000000, #ffffff);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 600px; 
+    width: 100%;
+}
+
+#TF {
+    text-align: center;
+    font-size: 40px;
+    background-color: #000;
+    color: #fff;
+}
+  
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+  
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#logo-in {
+    margin: 0 auto;
+    display: block;
+    width: 60%;
+    height: 30vh;
+    object-fit: contain;
+}
+
+#box-l {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+  
+.box .text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
 }
 
 .txt9
 {
-    font-family: Arial, Helvetica, sans-serif;
+
     font-size: 33px;
-    position: relative;
+    
     top: 25px;
 }
 
 .img_deg3
 {
-    position: relative;
+    
     top: 148px;
-    left: -2px;
+    
     z-index: -1;
 }
 
-.cont5
-{
-    position: relative;
-    text-align: center;
-    top: -600px;
-    z-index: -1;
-}
-.scont3
-{
-    height: 370px;
-    width: 350px;
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-}
-
-#txt10
-{
-    color: white;
-    position: relative;
-    top: -120px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 50px;
-}
-.txt_extras
-{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    position: relative;
-    top: 70px;
-}
-
-.img_extras
-{
-    position: relative;
-    top: 50px;
-}
 /**aquí inicia los diseños de ubicación**/
 .ubi_part1
 {
     margin: auto;
-    background-color: black;
+    background-color: #000;
     width: 100%;
     height: 570px;
 }
@@ -730,5 +910,6 @@ Aquí termina la barra de navegación
     color: #fff;
     text-align: center;
     margin-top: 30px;
+    
 }
 /**aquí termina los estilos de ubicación**/

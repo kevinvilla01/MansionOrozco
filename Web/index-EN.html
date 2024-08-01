@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>General</title>
+	</head>
+  <body id="Cuerpo">
+
+    <nav id="MO" class="bg-primary shadow-md py-4">
+		<img id="logo" src="Logo-invertido.png" width="60" height="80" alt="Logo_Masión_Orozco" class="image">
+		<a id="MO0" href="index.html" class="text-primary-foreground font-bold text-lg">Mansión Orozco - Puerto Vallarta, México</a>
+		<ul id="idioma">
+			<li>Language</li>
+			<ul id="menu-des">
+				<li><a href="index.html">Español (MX)</a></li>
+				<li><a href="index-EN.html">English (USA)</a></li>
+				<li><a href="index-FR.html">Français (CAN)</a></li>
+			</ul>
+		</ul>
+        <div class="max-w-screen-lg mx-auto flex justify-between items-center">
+          <ul id="MO2" class="flex space-x-4">
+            <li id="MO3"><a id="MO1" href="index-EN.html">Hotel Generalities</a></li>
+            <li id="MO3"><a id="MO1" href="">Promotions</a></li>
+            <li id="MO3"><a id="MO1" href="">Ubication</a></li>
+            <li id="MO3"><a id="MO1" href="">Lodging</a></li>
+            <li id="MO3"><a id="MO1" href="contactanos-EN.html">Contact</a></li>
+            <li id="MO3"><a id="MO1" href="AboutUs-EN.html">About us</a></li>
+			<li id="MO4" class="menu-icon"> 
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+				</svg>
+				<ul id="menu-des">
+					<li><a href="Login-EN.html">Login</a></li>
+				</ul>
+			</li>
+          </ul>
+        </div>
+    </nav>
+
+	<img src="Fachada.jpg" alt="Fachada del hotel" width="1860px" height="955px" class="img_hotel">
+    <div class="cont1" id="cont1" width="1860px" height="955px">
+        <h4 class="txt" id="txt1">Masión Orozco</h4>
+        <h1 class="txt" id="txt2">PUERTO VALLARTA,<br>MÉXICO</h1>
+        <h4 class="txt" id="txt3">BASILIO BADILLO 370, ZONA ROMÁNTICA, EMILIANO ZAPATA, <br>48380 PUERTO VALLARTA, JALISCO, MÉXICO</h4>
+    </div>
+
+    <div id="Bienvenida">
+    	<div class="cont2" width="1860px" height="955px">
+        	<h1 id="txt4">Welcome</h1>
+        	<p id="txt5">At Hotel Mansión Orozco, we have everything you need<br>
+                to make your stay the best. Our spaces are<br>
+                designed to provide the utmost comfort and make you feel<br>
+                like home.</p>
+    	</div>
+	</div> 
+
+    <div class="cont3">
+        <br><br><br>
+        <h1 id="txt6">Featured Promotions</h1>
+        <div class="scont" id="promo1">
+            <h2 class="promotxt"><a href="">PROMOTION 1</a></h2>
+        </div> 
+        <div class="scont" id="promo2">
+            <h2 class="promotxt"><a href="">PROMOTION 2</a></h2>
+        </div> 
+        <div class="scont" id="promo3">
+            <h2 class="promotxt"><a href="">PROMOTION 3</a></h2>
+        </div>
+        <br><br><br><br>
+        <a href="#
+        " id="txt7">VIEW ALL OFFERS</a>
+    </div>
+
+    
+    <div #Alojamiento-G style="background: linear-gradient(to bottom, #333333, #ffffff, #ffffff, #ffffff, #ffffff, #000000) !important;">
+        <h2 id="AG">Lodging</h2>
+        <div class="container-slider">
+            <div class="slider-track">
+                <div class="slide">
+                    <img src="habitación__1.jpg" alt="Habitación 1">
+                    <div class="texto-hover">
+                        <h3>Room 1</h3>
+                        <p>Brief Description</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="habitación__2.jpg" alt="Habitación 2">
+                    <div class="texto-hover">
+                        <h3>Room 2</h3>
+                        <p>Brief Description</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="habitación__3.jpg" alt="Habitación 3">
+                    <div class="texto-hover">
+                        <h3>Room 3</h3>
+                        <p>Brief Description</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="habitación_4.png" alt="Habitación 4">
+                    <div class="texto-hover">
+                        <h3>Room 4</h3>
+                        <p>Descripción Breve</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="habitación_5.png" alt="Habitación 5">
+                    <div class="texto-hover">
+                        <h1>Room 5</h1>
+                        <p>Brief Description</p>
+                    </div>
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <br>
+            <ul class="pagination">
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <br><br><br><br>
+    </div>    
+    
+    <script>
+        const sliderTrack = document.querySelector(".slider-track");
+        const slides = document.querySelectorAll(".slide");
+        const prevBtn = document.querySelector(".prev");
+        const nextBtn = document.querySelector(".next");
+        const pagination = document.querySelector(".pagination");
+
+        let currentSlide = 0;
+
+        const updateSlider = () => {
+            sliderTrack.style.transform = `translateX(-${currentSlide * 20}%)`;
+        };
+
+        const activatePagination = () => {
+            const paginationItems = pagination.querySelectorAll("li");
+            paginationItems.forEach((item, index) => {
+                item.classList.remove("active");
+                if (index === currentSlide) {
+                    item.classList.add("active");
+                }
+            });
+        };
+
+        const nextSlide = () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlider();
+            activatePagination();
+        };
+
+        const prevSlide = () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlider();
+            activatePagination();
+        };
+
+        prevBtn.addEventListener("click", prevSlide);
+        nextBtn.addEventListener("click", nextSlide);
+
+        pagination.addEventListener("click", (event) => {
+            const target = event.target;
+            if (target.tagName === "LI") {
+                currentSlide = parseInt(target.textContent) - 1;
+                updateSlider();
+                activatePagination();
+            }
+        });
+    </script>
+
+    <div id="TF">
+        <br>
+        <h1>SCROLL DOWN THE PAGE TO DISCOVER MORE</h1>
+        <br><br>
+    </div>
+    <div class="container-f">
+        <div class="box">
+            <a href="">
+                <img src="ubicación.png" alt="Ubi">
+                <div class="text">UBICATION</div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="">
+                <img src="cama.png" alt="Bed">
+                <div class="text">LODGING</div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="">
+                <img src="oferta.png" alt="Promo">
+                <div class="text">OFFERS</div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="AboutUs-EN.html">
+                <img id="logo-in" src="Logo-invertido.png" alt="Logo">
+                <div class="text">ABOUT US</div>
+            </a>
+        </div>
+        <br><br>
+    </div>
+</body>
+</html>
