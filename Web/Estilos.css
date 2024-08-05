@@ -272,7 +272,7 @@ Aquí termina la barra de navegación
 }
 
 #imagen4 {
-    width: 90%;
+    width: 95%;
     height: 130%;
     margin-left: 20px;
 }
@@ -622,7 +622,7 @@ Aquí termina la barra de navegación
 #promo2
 {
     text-align: center;
-    background-image: url(rest2.jpg);
+    background-image: url(rest.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
