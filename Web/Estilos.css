@@ -187,6 +187,8 @@ Aquí termina la barra de navegación
     font-size: x-large;
     text-align: center;
     font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #T2N
@@ -195,6 +197,8 @@ Aquí termina la barra de navegación
     font-size: x-large;
     text-align: center;
     font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #T3N
@@ -203,6 +207,8 @@ Aquí termina la barra de navegación
     font-size: x-large;
     text-align: center;
     font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #T4N {
@@ -218,6 +224,8 @@ Aquí termina la barra de navegación
     text-align: center;
     font-weight: bold;
     text-decoration: underline;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .contenedor2 {
@@ -228,12 +236,17 @@ Aquí termina la barra de navegación
 .contenedor3 {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
   
 #ubi, #insta, #tel {
     margin-right: 10px;
     width: 100px; 
     height: 100px;
+}
+
+#ubi {
+    margin-left: 20px;
 }
 
 #insta #tel {
@@ -278,7 +291,9 @@ Aquí termina la barra de navegación
 }
 
 .texto3 {
-    margin-right: 10%;
+    margin-right: 0%;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
 #img-pie {
@@ -296,7 +311,7 @@ Aquí termina la barra de navegación
 }
 
 .HS-container {
-    height: 400px;
+    height: 350px;
     width: 80%;
     margin: 50px auto;
     background-color: #F5F1ED;
@@ -351,20 +366,46 @@ Aquí termina la barra de navegación
 }
 
 .bed-icon {
-    float: left;
+    display: inline-block;
     margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 0;
+    padding-right: 0;
+    overflow: hidden; 
 }
 
 .bed-icon img {
+    float: left;
     width: 50%;
     height: 50%;
     fill: #333;
+    margin-right: 0;
+    padding-right: 0;
+    overflow: hidden; 
 }
 
 .detalles {
-    margin-left: 0;
     margin-bottom: 20px;
     margin-right: 200px;
+}
+
+#txtd1 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+#txtd2 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+#txtd3 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
 }
 
 .detalles h3 {
@@ -384,8 +425,10 @@ Aquí termina la barra de navegación
 }
 
 .people-icon {
-    float: left;
-    margin-right: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 200px;
+    right: 300;
 }
 
 .people-icon img {
@@ -498,7 +541,6 @@ Aquí termina la barra de navegación
     font-style: normal;
     font-weight: 100;
     font-size: 110px;
-    
     top: 300px;
 }
 
@@ -569,6 +611,7 @@ Aquí termina la barra de navegación
 
 #promo1
 {
+    text-align: center;
     background-image: url(yate2.jpg);
     background-size: cover;
     background-position: center;
@@ -578,6 +621,7 @@ Aquí termina la barra de navegación
 
 #promo2
 {
+    text-align: center;
     background-image: url(rest2.jpg);
     background-size: cover;
     background-position: center;
@@ -587,6 +631,7 @@ Aquí termina la barra de navegación
 
 #promo3
 {
+    text-align: center;
     background-image: url(malecon2.jpg);
     background-size: cover;
     background-position: center;
@@ -596,6 +641,7 @@ Aquí termina la barra de navegación
 
 #promo4
 {
+    text-align: center;
     background-image: url(Fachada.jpg);
     background-size: cover;
     background-position: center;
@@ -873,21 +919,18 @@ Aquí termina la barra de navegación
     transform: translateX(-50%);
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 .txt9
 {
-
     font-size: 33px;
-    
     top: 25px;
 }
 
 .img_deg3
 {
-    
     top: 148px;
-    
     z-index: -1;
 }
 
@@ -1062,8 +1105,26 @@ Aquí termina la barra de navegación
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
-
 /**aquí termina los estilos de ubicación**/
+/** estilos de ofertas 1-4 **/
+.o-des {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to bottom, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff, #000000);
+}
+
+.o-des h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.o-des p {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+/** fin de ofertas**/
 /**aquí comienzan los estilos del error 404**/
 .error404_main
 {
