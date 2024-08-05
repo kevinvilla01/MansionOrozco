@@ -272,7 +272,7 @@ Aquí termina la barra de navegación
 }
 
 #imagen4 {
-    width: 95%;
+    width: 90%;
     height: 130%;
     margin-left: 20px;
 }
@@ -622,7 +622,7 @@ Aquí termina la barra de navegación
 #promo2
 {
     text-align: center;
-    background-image: url(rest.jpg);
+    background-image: url(rest2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
@@ -1152,6 +1152,7 @@ Aquí termina la barra de navegación
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 90px;
+    -webkit-text-stroke: 4px rgba(255, 255, 255, 0.37);
 }
 #error404_text2
 {
@@ -1160,5 +1161,8 @@ Aquí termina la barra de navegación
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     text-align: center;
+    -webkit-text-stroke: 4px rgba(255, 255, 255, 0.37);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 /**aquí terminan los estilos del error 404**/
