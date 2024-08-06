@@ -310,6 +310,8 @@ Aquí termina la barra de navegación
 
 }
 
+/**cat**/
+
 .HS-container {
     height: 350px;
     width: 80%;
@@ -325,8 +327,8 @@ Aquí termina la barra de navegación
 }
 
 .HG-container {
-    height: 400px;
-    width: 80%;
+    height: 500px;
+    width: 90%;
     margin: 50px auto;
     background-color: #F5F1ED;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
@@ -368,28 +370,56 @@ Aquí termina la barra de navegación
 }
 
 .bedm-icon {
-    display: flex;
     align-items: center;
     margin-left: 4%;
     margin-top: 0%;
-    margin-bottom: 0%;
-    padding-right: 0;
-    overflow: hidden; 
+    
 }
 
 .bedm-icon img {
-    float: left;
     width: 60%;
     height: 60%;
-    fill: #333;
-    margin-right: 0;
-    padding-right: 0;
-    overflow: hidden; 
+}
+
+.bedg1-icon {
+    margin-left: 4%;
+    margin-right: 30px;
+}
+
+.bedg1-icon img {
+    width: 20%;
+    height: 20%;
+    margin-right: 0px;
+}
+
+.sum {
+    width: 3%;
+    height: 3%;
+}
+
+.bedm-icon2 {
+    display: flex;
+    margin-right: 30px;
+}
+
+.bedm-icon2 img {
+    width: 20%;
+    height: 20%;
+    margin-right: 0px;
+}
+
+
+.bedg-icon {
+    
+}
+
+.bedg-icon img {
+    
 }
 
 .detalles {
     margin-bottom: 20px;
-    margin-right: 200px;
+    
 }
 
 #txtd1 {
@@ -399,9 +429,8 @@ Aquí termina la barra de navegación
 }
 
 #txtd2 {
-    display: block;
-    margin-left: 10px;
-    flex: 1;
+    left: 300;
+
 }
 
 #txtd3 {
@@ -418,7 +447,7 @@ Aquí termina la barra de navegación
 
 .detalles ul {
     list-style: disc;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .detalles li {
@@ -447,6 +476,7 @@ Aquí termina la barra de navegación
     width: 100%;
     height: 100vh;
 }
+/** fin de cat**/
 
 
 @layer base {
