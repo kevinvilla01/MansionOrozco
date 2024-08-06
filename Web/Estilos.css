@@ -363,22 +363,24 @@ Aquí termina la barra de navegación
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.bed-icon {
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 0;
+.bedm-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     padding-right: 0;
     overflow: hidden; 
 }
 
-.bed-icon img {
+.bedm-icon img {
     float: left;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     fill: #333;
     margin-right: 0;
     padding-right: 0;
@@ -391,25 +393,25 @@ Aquí termina la barra de navegación
 }
 
 #txtd1 {
-    display: inline-block;
+    display: block;
     margin-left: 10px;
-    vertical-align: top;
+    flex: 1;
 }
 
 #txtd2 {
-    display: inline-block;
+    display: block;
     margin-left: 10px;
-    vertical-align: top;
+    flex: 1;
 }
 
 #txtd3 {
-    display: inline-block;
+    display: block;
     margin-left: 10px;
-    vertical-align: top;
+    flex: 1;
 }
 
 .detalles h3 {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -425,16 +427,13 @@ Aquí termina la barra de navegación
 }
 
 .people-icon {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 200px;
-    right: 300;
+    float: left;
+    margin-right: 30px;
 }
 
 .people-icon img {
-    width: 120px;
-    height: 120px;
-    fill: #333;
+    width: 100px;
+    height: 100px;
 }
 
 .all {
