@@ -641,7 +641,7 @@ Aquí termina la barra de navegación
 #promo1
 {
     text-align: center;
-    background-image: url(yate2.jpg);
+    background-image: url(img/yate2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
@@ -651,7 +651,7 @@ Aquí termina la barra de navegación
 #promo2
 {
     text-align: center;
-    background-image: url(rest2.jpg);
+    background-image: url(img/rest2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
@@ -661,7 +661,7 @@ Aquí termina la barra de navegación
 #promo3
 {
     text-align: center;
-    background-image: url(malecon2.jpg);
+    background-image: url(img/malecon2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
@@ -671,7 +671,7 @@ Aquí termina la barra de navegación
 #promo4
 {
     text-align: center;
-    background-image: url(Fachada.jpg);
+    background-image: url(img/Fachada.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
