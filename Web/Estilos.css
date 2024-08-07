@@ -311,9 +311,8 @@ Aquí termina la barra de navegación
 }
 
 /**cat**/
-
 .HS-container {
-    height: 350px;
+    height: 500px;
     width: 80%;
     margin: 50px auto;
     background-color: #F5F1ED;
@@ -327,12 +326,13 @@ Aquí termina la barra de navegación
 }
 
 .HG-container {
-    height: 500px;
-    width: 90%;
+    height: 600px;
+    width: 80%;
     margin: 50px auto;
     background-color: #F5F1ED;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    transition: transform 0.3s ease;
 }
 
 .HG-container:hover {
@@ -362,7 +362,7 @@ Aquí termina la barra de navegación
 }
 
 .contenido {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 20px;
     display: flex;
@@ -370,56 +370,73 @@ Aquí termina la barra de navegación
 }
 
 .bedm-icon {
-    align-items: center;
-    margin-left: 4%;
-    margin-top: 0%;
-    
+    align-items: center; 
+    width: 30%;   
+    height: 30%;
+    padding-left:4% ;
+    padding-top: 7%;
+    margin-right: 10%;
 }
-
-.bedm-icon img {
-    width: 60%;
-    height: 60%;
-}
-
 .bedg1-icon {
-    margin-left: 4%;
-    margin-right: 30px;
+    margin-left: 3%;
+    width: 24%;
+    height: 24%;
 }
 
-.bedg1-icon img {
-    width: 20%;
-    height: 20%;
+.bedm-icon2{
+    width: 23%;
+    height: 23%;
     margin-right: 0px;
+}
+
+.minibar {
+    position: relative;
+    top: 250px;
+    left: -410px;
+}
+
+.minibar img {
+    height: 150%;
+    width: 150%;
+    object-fit: cover;
+}
+
+.cocina {
+    position: relative;
+    top: 240px;
+    left: -370px;
+}
+
+.cocina img {
+    height: 150%;
+    width: 150%;
+    object-fit: cover;
+}
+
+.sum2 {
+    position: relative;
+    width: 4%;
+    height: 4%;
+    top: 250px;
+    left: -390px;
 }
 
 .sum {
-    width: 3%;
-    height: 3%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 6%;
+    height: 6%;
 }
 
-.bedm-icon2 {
-    display: flex;
+
+.people-icon {
+    float: left;
     margin-right: 30px;
 }
 
-.bedm-icon2 img {
-    width: 20%;
-    height: 20%;
-    margin-right: 0px;
-}
-
-
-.bedg-icon {
-    
-}
-
-.bedg-icon img {
-    
-}
-
-.detalles {
-    margin-bottom: 20px;
-    
+.people-icon img {
+    width: 100px;
+    height: 100px;
 }
 
 #txtd1 {
@@ -430,7 +447,6 @@ Aquí termina la barra de navegación
 
 #txtd2 {
     left: 300;
-
 }
 
 #txtd3 {
@@ -439,30 +455,50 @@ Aquí termina la barra de navegación
     flex: 1;
 }
 
-.detalles h3 {
-    font-size: 40px;
+.detalles1 h3 {
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.detalles ul {
+.detalles1 ul {
     list-style: disc;
     margin-left: 0px;
 }
 
-.detalles li {
+.detalles1 li {
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
-.people-icon {
-    float: left;
-    margin-right: 30px;
+.detalles2 h3 {
+    padding-top: 40px;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.people-icon img {
-    width: 100px;
-    height: 100px;
+.detalles2 ul {
+    list-style: disc;
+}
+
+.detalles2 li {
+    font-size: 19px;
+}
+
+.detalles3 h3 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.detalles3 ul {
+    list-style: disc;
+    margin-left: 0px;
+}
+
+.detalles3 li {
+    margin-bottom: 5px;
+    font-size: 22px;
 }
 
 .all {
