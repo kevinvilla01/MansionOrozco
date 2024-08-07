@@ -187,6 +187,8 @@ Aquí termina la barra de navegación
     font-size: x-large;
     text-align: center;
     font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #T2N
@@ -195,6 +197,8 @@ Aquí termina la barra de navegación
     font-size: x-large;
     text-align: center;
     font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #T3N
@@ -203,6 +207,8 @@ Aquí termina la barra de navegación
     font-size: x-large;
     text-align: center;
     font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #T4N {
@@ -218,6 +224,8 @@ Aquí termina la barra de navegación
     text-align: center;
     font-weight: bold;
     text-decoration: underline;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .contenedor2 {
@@ -228,12 +236,17 @@ Aquí termina la barra de navegación
 .contenedor3 {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
   
 #ubi, #insta, #tel {
     margin-right: 10px;
     width: 100px; 
     height: 100px;
+}
+
+#ubi {
+    margin-left: 20px;
 }
 
 #insta #tel {
@@ -259,7 +272,7 @@ Aquí termina la barra de navegación
 }
 
 #imagen4 {
-    width: 90%;
+    width: 95%;
     height: 130%;
     margin-left: 20px;
 }
@@ -278,7 +291,9 @@ Aquí termina la barra de navegación
 }
 
 .texto3 {
-    margin-right: 10%;
+    margin-right: 0%;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
 #img-pie {
@@ -296,7 +311,7 @@ Aquí termina la barra de navegación
 }
 
 .HS-container {
-    height: 400px;
+    height: 350px;
     width: 80%;
     margin: 50px auto;
     background-color: #F5F1ED;
@@ -351,20 +366,46 @@ Aquí termina la barra de navegación
 }
 
 .bed-icon {
-    float: left;
+    display: inline-block;
     margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 0;
+    padding-right: 0;
+    overflow: hidden; 
 }
 
 .bed-icon img {
+    float: left;
     width: 50%;
     height: 50%;
     fill: #333;
+    margin-right: 0;
+    padding-right: 0;
+    overflow: hidden; 
 }
 
 .detalles {
-    margin-left: 0;
     margin-bottom: 20px;
     margin-right: 200px;
+}
+
+#txtd1 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+#txtd2 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+#txtd3 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
 }
 
 .detalles h3 {
@@ -384,14 +425,28 @@ Aquí termina la barra de navegación
 }
 
 .people-icon {
-    float: left;
-    margin-right: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 200px;
+    right: 300;
 }
 
 .people-icon img {
     width: 120px;
     height: 120px;
     fill: #333;
+}
+
+.all {
+    background-color:#F5F1ED ;
+    width: 100%;
+    height: 40vh;
+}
+
+#politics {
+    background-color:#ffffff ;
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -486,7 +541,6 @@ Aquí termina la barra de navegación
     font-style: normal;
     font-weight: 100;
     font-size: 110px;
-    
     top: 300px;
 }
 
@@ -557,7 +611,8 @@ Aquí termina la barra de navegación
 
 #promo1
 {
-    background-image: url(rest2.jpg);
+    text-align: center;
+    background-image: url(yate2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
@@ -566,7 +621,8 @@ Aquí termina la barra de navegación
 
 #promo2
 {
-    background-image: url(yate2.jpg);
+    text-align: center;
+    background-image: url(rest.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
@@ -575,7 +631,18 @@ Aquí termina la barra de navegación
 
 #promo3
 {
+    text-align: center;
     background-image: url(malecon2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* radio de la esquina de la imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* sombra de la imagen */
+}
+
+#promo4
+{
+    text-align: center;
+    background-image: url(Fachada.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* radio de la esquina de la imagen */
@@ -593,6 +660,11 @@ Aquí termina la barra de navegación
 }
 
 #promo3:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#promo4:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
@@ -847,69 +919,213 @@ Aquí termina la barra de navegación
     transform: translateX(-50%);
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 .txt9
 {
-
     font-size: 33px;
-    
     top: 25px;
 }
 
 .img_deg3
 {
-    
     top: 148px;
-    
     z-index: -1;
 }
 
 /**aquí inicia los diseños de ubicación**/
 .ubi_part1
 {
+    display:flex;
     margin: auto;
-    background-color: #000;
+    background: linear-gradient(to top, #000000,#202020,#404040);
     width: 100%;
-    height: 570px;
+    height: 50%;
 }
 #ubi_map
 {
+    display: flex;
+    margin: 5px;
     -moz-border-radius: 10%;
     -webkit-border-radius: 10%;
     border-radius: 10%;
 }
+#ubi_foto1
+{
+    display: flex;
+    margin: 5px;
+}
 .ubi_part1-1
 {
-    margin-top: 5px;
-    margin-left: 5px; 
-    width: 255px;
+    margin: auto;
+    display: flex;
+    width: 17%;
     height: 565px;
-    float: left;
+    justify-items: start;
 }
 .ubi_part1-2
 {
-    float: inline-start;
-    width: 935px;
-    height: 565px;
-    
+    margin: auto;
     margin: 5px;
+    width: 64%;
+    height: 565px;
+    justify-items: center;
 }
 .ubi_part1-3
 {
-    margin-top: 5px;
-    margin-right: 5px;
-    width:255px; 
+    margin: auto;
+    display: flex;
+    width: 17%; 
     height:565px;
-    float: right;
+    justify-items: end;
 }
 #ubi_text1
 {
     font-family: Arial;
-    font-size: 24px;
-    color: #fff;
+    font-size: 28px;
+    color: #ffffff;
     text-align: center;
-    margin-top: 30px;
-    
+    margin: 15px;
 }
+
+#ubi_Ttext1
+{
+    font-family: Arial;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    -webkit-text-stroke: 4px rgba(255, 255, 255, 0.37);
+}
+
+#barra10
+{
+    background: linear-gradient(to top, #252525,#404040,#626262);
+    font-family: Arial;
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: underline;
+}
+.ubi_part2
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: linear-gradient(to top, #ffffff,#959595,#606060, #4e4e4e);
+    width: 100%;
+    height: 700px;
+}
+.ubi_part2-1
+{
+    background: linear-gradient(to top, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff, #000000);
+    width: 100%;
+    height: 190vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.utxt1 {
+    font-size: 20px;
+    font-weight: 600;
+    width: 45%;
+    padding: 10px;
+    text-align: left
+}
+
+.utxt2 {
+    list-style: circle;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    width: 45%;
+    padding: 10px;
+}
+
+.utxt3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    width: 45%;
+    padding: 10px;
+}
+
+#uTtxt1
+{
+    font-family: Arial;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    font-weight: 1000;
+    -webkit-text-stroke: 2px rgba(116, 116, 116, 0.37);
+}
+
+#uTtxt2
+{
+    font-family: Arial;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    font-weight: 1000;
+    -webkit-text-stroke: 2px rgba(116, 116, 116, 0.37);
+}
+
+#uTtxt3
+{
+    font-family: Arial;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    font-weight: 1000;
+    -webkit-text-stroke: 2px rgba(116, 116, 116, 0.37);
+}
+
+.ubi_part2-2
+{
+    background: linear-gradient(to bottom, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff, #f3f3f3);
+    width: 100%;
+    height: 70vh;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.galeria img {
+    width: 18%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
 /**aquí termina los estilos de ubicación**/
+
+/** estilos de ofertas 1-4 **/
+.o-des {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to bottom, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff, #000000);
+}
+
+.o-des h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.o-des p {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+/** fin de ofertas**/
+=======
+
