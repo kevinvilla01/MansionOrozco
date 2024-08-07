@@ -10,7 +10,7 @@ else {
     $mysql=pg_query($conexion,"select * from empleado where nombre='$nombre' and contraseña='$contraseña' ");
 
     if (pg_num_rows($mysql)>0)
-        header("location:Administrador.html");
+        header("location:adm_panel.html");
     else{
         echo "<script>alert('ACCESO DENEGADO');</script>";
     }
