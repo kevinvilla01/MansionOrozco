@@ -1,13 +1,15 @@
 <?php
 require 'conection.php';
 
-if (empty($_POST["user"]) || empty($_POST["password"])){
+session_start();
+
+if (empty($_POST["username"]) || empty($_POST["password"])){
     echo "<script>alert('Los campos están vacíos');</script>";
 }
 else {
-    $usr=$_POST["user"];
+    $usr=$_POST["username"];
     $pass=$_POST["password"];
-    $query=pg_query($conexion,"select * from USUARIOS where user='$usr' and passwd='$pass' ");
+    $query=pg_query($Conection,"SELECT * FROM USUARIOS WHERE username='$usr' AND passwd='$pass'");
 
     if (pg_num_rows($query)>0)
         header("location:adm_panel.html");
