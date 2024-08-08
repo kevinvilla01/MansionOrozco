@@ -1248,3 +1248,137 @@ Aquí termina la barra de navegación
     text-decoration: underline;
 }
 /**aquí terminan los estilos del error 404**/
+/**aquí comienza los estilos administracion**/
+.header_inv
+{
+    display: flex;
+  background-color: #4e4e4e;
+    height: 7vh;
+    
+}
+#header_inv_part1-1:hover
+{
+    transform: scale(1.1);
+}
+#header_inv_part1-2:hover
+{
+    transform: scale(1.1);
+}
+#header_inv_part2-3:hover
+{
+    transform: scale(1.1);
+}
+#header_inv_part2-1:hover
+{
+    transform: scale(1.1);
+}
+#icon1_header_inv_part2-2:hover
+{
+    transform: scale(1.1);
+}
+#header_inv_part1
+{
+    display: flex;
+    justify-items: start;
+
+    height: 100%;
+    width: 20%;
+}
+#header_inv_part1-1
+{
+    display: flex;
+    justify-content: center;
+    justify-items: start;
+  
+    width: 30%;
+    height: 100%;
+    transition: all 300ms ease;
+}
+#img1_header_inv_part1-1
+{
+    display: flex;
+    height: 70%;
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+}
+#header_inv_part1-2
+{
+    display: flex;
+    justify-items: end;
+
+    width: 60%;
+    height: 100%;
+    justify-content: start;
+    transition: all 300ms ease;
+}
+#text1_header_inv_part1-2
+{
+    display: flex;
+    color: white;
+    font: 30px arial;
+    align-self: center;
+}
+
+#header_inv_part2
+{
+    display: flex;
+    justify-items: end;
+   
+    height: 100%;
+    width: 80%;
+    
+}
+#header_inv_part2-1
+{
+    display: flex;
+   background-color: #606060;
+    height: 100%;
+    width: 4%;
+    align-content: end;
+    transition: all 300ms ease;
+}
+#icon1_header_inv_part2-1
+{
+    display: flex;
+    align-self: center;
+    color: #fff;
+   
+}
+#header_inv_part2-2
+{
+    display: flex;
+  
+    height: 100%;
+    width: 92%;
+    justify-content: end;
+    
+}
+#icon1_header_inv_part2-2
+{
+    display: flex;
+    transition: all 300ms ease;
+}
+#header_inv_part2-3
+{
+    display: flex;
+background-color: #626262;
+    height: 100%;
+    width: 4%;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+#icon1_header_inv_part2-3
+{
+    display: flex;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    justify-self: right;
+    
+}
+.panel_inv
+{
+
+}
+/**aquí terminan los estilos administracion**/
