@@ -326,7 +326,7 @@ Aquí termina la barra de navegación
 }
 
 .HG-container {
-    height: 600px;
+    height: 500px;
     width: 80%;
     margin: 50px auto;
     background-color: #F5F1ED;
@@ -378,21 +378,27 @@ Aquí termina la barra de navegación
     margin-right: 10%;
 }
 .bedg1-icon {
-    margin-left: 3%;
-    width: 24%;
-    height: 24%;
+    position: relative;
+    top: 40px;
+    margin-left: 4%;
+    width: 26%;
+    height: 26%;
+    margin-top: -190px;
 }
 
 .bedm-icon2{
+    position: relative;
     width: 23%;
     height: 23%;
-    margin-right: 0px;
+    top: 40px;
+    margin-right: -200px;
+    margin-top: -180px;
 }
 
 .minibar {
     position: relative;
-    top: 250px;
-    left: -410px;
+    top: 170px;
+    left: -190px;
 }
 
 .minibar img {
@@ -403,8 +409,8 @@ Aquí termina la barra de navegación
 
 .cocina {
     position: relative;
-    top: 240px;
-    left: -370px;
+    top:160px;
+    left: -150px;
 }
 
 .cocina img {
@@ -417,21 +423,24 @@ Aquí termina la barra de navegación
     position: relative;
     width: 4%;
     height: 4%;
-    top: 250px;
-    left: -390px;
+    top: 170px;
+    left: -170px;
 }
 
 .sum {
+    position: relative;
     margin-left: 10px;
     margin-right: 10px;
     width: 6%;
+    top: 40px;
     height: 6%;
+    margin-top: -170px;
 }
 
 
 .people-icon {
     float: left;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .people-icon img {
@@ -469,6 +478,10 @@ Aquí termina la barra de navegación
 .detalles1 li {
     margin-bottom: 5px;
     font-size: 22px;
+}
+
+.detalles2 {
+    padding-right: 10%;
 }
 
 .detalles2 h3 {
