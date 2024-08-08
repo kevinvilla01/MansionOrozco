@@ -341,7 +341,7 @@ Aquí termina la barra de navegación
 }
 
 .S-container {
-    height: 400px;
+    height: 700px;
     width: 90%;
     margin: 50px auto;
     background-color: #F5F1ED;
@@ -395,25 +395,25 @@ Aquí termina la barra de navegación
     margin-top: -180px;
 }
 
-.minibar {
+.minibar1 {
     position: relative;
     top: 170px;
     left: -190px;
 }
 
-.minibar img {
+.minibar1 img {
     height: 150%;
     width: 150%;
     object-fit: cover;
 }
 
-.cocina {
+.cocina1 {
     position: relative;
     top:160px;
     left: -150px;
 }
 
-.cocina img {
+.cocina1 img {
     height: 150%;
     width: 150%;
     object-fit: cover;
@@ -459,8 +459,9 @@ Aquí termina la barra de navegación
 }
 
 #txtd3 {
+
     display: block;
-    margin-left: 10px;
+    margin-left: 50px;
     flex: 1;
 }
 
@@ -476,6 +477,7 @@ Aquí termina la barra de navegación
 }
 
 .detalles1 li {
+    margin-left: 20px;
     margin-bottom: 5px;
     font-size: 22px;
 }
