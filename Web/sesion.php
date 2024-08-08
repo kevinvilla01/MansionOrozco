@@ -5,14 +5,15 @@ if (empty($_POST["user"]) || empty($_POST["password"])){
     echo "<script>alert('Los campos están vacíos');</script>";
 }
 else {
-    $nombre=$_POST["user"];
-    $contraseña=$_POST["password"];
-    $mysql=pg_query($conexion,"select * from empleado where nombre='$nombre' and contraseña='$contraseña' ");
+    $usr=$_POST["user"];
+    $pass=$_POST["password"];
+    $query=pg_query($conexion,"select * from USUARIOS where user='$usr' and passwd='$pass' ");
 
-    if (pg_num_rows($mysql)>0)
+    if (pg_num_rows($query)>0)
         header("location:adm_panel.html");
     else{
         echo "<script>alert('ACCESO DENEGADO');</script>";
     }
 }
+
 ?>
