@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="fondo">
-        <img src="../Web/img/logoco.png" alt="Logo Hotel Mansión Orozco" class="logo">
+        <img src="../img/logoco.png" alt="Logo Hotel Mansión Orozco" class="logo">
         <h1 class="titulo">¡Bienvenido al inventario!</h1>
 
         <!-- Lateral de navegación -->
@@ -27,7 +27,7 @@
 
         <!-- User options -->
         <div class="user-options">
-            <span class="icon"><img src="../Web/img/ususario.png" class="iconos" id="infouserBtn"></span>
+            <span class="icon"><img src="../img/ususario.png" class="iconos" id="infouserBtn"></span>
         </div>
         <!-- Fin de user options -->
 
