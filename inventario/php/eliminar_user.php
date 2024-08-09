@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $connection = dbConnect();
 
-    $query = "DELETE FROM empleado WHERE nombre = '$eliminarnombre' OR id_empleado = '$eliminarid'";
+    $query = "DELETE FROM USUARIOS WHERE nombre = '$eliminarnombre' OR id_usuario = '$eliminarid'";
     $result = pg_query($connection, $query);
 
     if ($result) {

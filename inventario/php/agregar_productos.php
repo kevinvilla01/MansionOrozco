@@ -2,16 +2,16 @@
 include 'db_connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $productoID = $_POST['productoID'];
     $productoNombre = $_POST['productoNombre'];
     $productoDescripcion = $_POST['productoDescripcion'];
-    $productoCantidad = $_POST['productoCantidad'];
-    $productoPrecio = $_POST['productoPrecio'];
     $productoCategoria = $_POST['productoCategoria'];
+    $productoPrecio = $_POST['productoPrecio'];
+    $productoStockTotal = $_POST['productoStockTotal'];
+    $productoStockMin = $_POST['productoStockMin'];
 
     $connection = dbConnect();
 
-    $query = "INSERT INTO PRODUCTOS (id_producto, producto, descripcion, cantidad, precio, categoria) VALUES ('$productoID', '$productoNombre', '$productoDescripcion', '$productoCantidad', '$productoPrecio', '$productoCategoria')";
+    $query = "INSERT INTO PRODUCTOS (nombre, descripcion, categoria, precio_unitario, stock_total, stock_min) VALUES ('$productoNombre', '$productoDescripcion', '$productoCategoria', '$productoPrecio', '$productoStockTotal', 'productoStockMin')";
     $result = pg_query($connection, $query);
 
     if ($result) {

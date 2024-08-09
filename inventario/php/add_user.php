@@ -7,14 +7,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $tel = $_POST['tel'];
     $emailUser = $_POST['emailUser'];
     $password = $_POST['password'];
-    $idempleado = $_POST['idempleado'];
+    $userempleado = $_POST['userempleado'];
     $puesto = $_POST['puesto'];
-    $domicilioUser = $_POST['domicilioUser'];
-    $edadUser = $_POST['edadUser'];
 
     $connection = dbConnect();
 
-    $query = "INSERT INTO empleado (nombre, apellido, tel, email, contraseña, id_empleado, puesto, domicilio, edad) VALUES ('$nombreUser', '$apellidoUser', '$tel', '$emailUser', '$password', '$idempleado', '$puesto', '$domicilioUser', '$edadUser')";
+    $query = "INSERT INTO USUARIOS (nombre, apellido, correo, telefono, rol, username, passwd) VALUES ('$nombreUser', '$apellidoUser', '$emailUser', 'tel', '$puesto', '$userempleado', 'password')";
     $result = pg_query($connection, $query);
 
     if ($result) {

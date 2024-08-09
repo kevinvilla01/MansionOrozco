@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $connection = dbConnect();
 
-    $query = "DELETE FROM PRODUCTOS WHERE id_producto = '$productoIDEliminar'";
+    $query = "DELETE FROM PRODUCTOS WHERE id = '$productoIDEliminar'";
     $result = pg_query($connection, $query);
 
     if ($result) {

@@ -96,8 +96,6 @@
         <section id="agregarProductoSection" class="agregarusuariod">
             <h2>Agregar Producto</h2>
             <form id="agregarProductoForm" action="php/agregar_productos.php" method="post">
-                <label for="productoID">ID:</label>
-                <input type="text" id="productoID" name="productoID" required><br>
 
                 <label for="productoNombre">Nombre:</label>
                 <input type="text" id="productoNombre" name="productoNombre" required><br>
@@ -105,14 +103,17 @@
                 <label for="productoDescripcion">Descripción:</label>
                 <input type="text" id="productoDescripcion" name="productoDescripcion" required><br>
 
-                <label for="productoCantidad">Cantidad:</label>
-                <input type="number" id="productoCantidad" name="productoCantidad" required><br>
+                <label for="productoCantidad">Categoria:</label>
+                <input type="text" id="productoCategoria" name="productoCategoria" required><br>
 
                 <label for="productoPrecio">Precio:</label>
                 <input type="number" id="productoPrecio" name="productoPrecio" required><br>
 
-                <label for="productoCategoria">Categoría:</label>
-                <input type="text" id="productoCategoria" name="productoCategoria" required><br>
+                <label for="productoCategoria">Stock total:</label>
+                <input type="text" id="productoCategoria" name="productoStockTotal" required><br>
+
+                <label for="productoCategoria">Stock Minimo:</label>
+                <input type="text" id="productoCategoria" name="productoStockMin" required><br>
 
                 <button type="submit">Agregar Producto</button>
             </form>
@@ -139,17 +140,17 @@
                 <label for="apellidoUser">Apellido del usuario:</label>
                 <input type="text" id="apellidoUser" name="apellidoUser" required><br>
 
-                <label for="tel">Teléfono del usuario:</label>
-                <input type="number" id="tel" name="tel" required><br>
-
                 <label for="emailUser">Email del usuario:</label>
                 <input type="email" id="emailUser" name="emailUser" required><br>
 
+                <label for="tel">Teléfono del usuario:</label>
+                <input type="number" id="tel" name="tel" required><br>
+
+                <label for="userempleado">Username del empleado:</label>
+                <input type="text" id="userempleado" name="userempleado" required><br>
+
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required><br>
-
-                <label for="idempleado">ID del empleado:</label>
-                <input type="number" id="idempleado" name="idempleado" required><br>
 
                 <label for="puesto">Puesto del usuario ("gerente", "trabajador"):</label>
                 <input type="text" id="puesto" name="puesto" required><br>
