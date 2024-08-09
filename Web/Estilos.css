@@ -1258,25 +1258,29 @@ Aquí termina la barra de navegación
     height: 7vh;
     
 }
-#header_inv_part1-1:hover
-{
-    transform: scale(1.1);
-}
 #header_inv_part1-2:hover
 {
     transform: scale(1.1);
+    background-color: #606060;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 #header_inv_part2-3:hover
 {
     transform: scale(1.1);
-}
-#header_inv_part2-1:hover
-{
-    transform: scale(1.1);
+    background-color: #606060;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 #icon1_header_inv_part2-2:hover
 {
     transform: scale(1.1);
+    background-color: #626262;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+#header_inv_part2-1:hover
+{
+    transform: scale(1.1);
+    background-color: #606060;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 #header_inv_part1
 {
@@ -1294,7 +1298,7 @@ Aquí termina la barra de navegación
   
     width: 30%;
     height: 100%;
-    transition: all 300ms ease;
+   
 }
 #img1_header_inv_part1-1
 {
@@ -1321,7 +1325,9 @@ Aquí termina la barra de navegación
     font: 30px arial;
     align-self: center;
 }
+/**submenu**/
 
+/**submenu**/
 #header_inv_part2
 {
     display: flex;
@@ -1334,7 +1340,7 @@ Aquí termina la barra de navegación
 #header_inv_part2-1
 {
     display: flex;
-   background-color: #606060;
+
     height: 100%;
     width: 4%;
     align-content: end;
@@ -1356,15 +1362,10 @@ Aquí termina la barra de navegación
     justify-content: end;
     
 }
-#icon1_header_inv_part2-2
-{
-    display: flex;
-    transition: all 300ms ease;
-}
 #header_inv_part2-3
 {
     display: flex;
-background-color: #626262;
+
     height: 100%;
     width: 4%;
     justify-content: center;
