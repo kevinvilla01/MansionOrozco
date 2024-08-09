@@ -12,7 +12,7 @@ else {
     $query=pg_query($Conection,"SELECT * FROM USUARIOS WHERE username='$usr' AND passwd='$pass'");
 
     if (pg_num_rows($query)>0)
-        header("location:adm_panel.html");
+        header("location:inventario/index.php");
     else{
         echo "<script>alert('ACCESO DENEGADO');</script>";
     }

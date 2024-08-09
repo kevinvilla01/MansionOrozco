@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Estilos.css">
 </head>
 <body class="inventario">
-
+<div  class="control_panel">
     <div class="header_inv">
         <div id="header_inv_part1">
             <div id="header_inv_part1-1"><img src="img/logoco inver.png" id="img1_header_inv_part1-1"></div>
@@ -17,8 +17,8 @@
         <div id="header_inv_part2">
             <div id="header_inv_part2-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" fill="currentColor" id="icon1_header_inv_part2-1" viewBox="0 0 16 16">
-					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
-				</svg>
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
+                </svg>
             </div>
             <div id="header_inv_part2-2">
                 <img src="img/ususario.png" id="icon1_header_inv_part2-2">
@@ -28,11 +28,21 @@
             </div>
         </div>
     </div>
-<div class="panel_inv">
-    <div id="panel_inv"></div>
+<div class="panel_inv_des">
+    <div id="panel_inv">
+        <div id="panel_menu_text_div"><p id="panel_menu_text">Menu</p></div>
+        <ul id="lista_opciones_inv">
+            <li><a id="a_opcion_inv" href="#"><p id="p_opcion_inv">Inventario</p></a></li>
+            <li><a id="a_opcion_inv" href="#"><p id="p_opcion_inv">Chat</p></a></li>
+            <li><a id="a_opcion_inv" href="#"><p id="p_opcion_inv">Agregar producto</p></a></li>
+            <li><a id="a_opcion_inv" href="#"><p id="p_opcion_inv">Eliminar producto</p></a></li>
+            <li><a id="a_opcion_inv" href="#"><p id="p_opcion_inv">Usuarios</p></a></li>
+        </ul>
+    </div>
     <div></div>
     <div></div>
     <div></div>
+</div>
 </div>
 </body>
 </html>
