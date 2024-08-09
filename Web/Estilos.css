@@ -542,7 +542,7 @@ Aquí termina la barra de navegación
 
 #txtd3 {
     display: block;
-    margin-left: -100px;
+    margin-left: -150px;
     flex: 1;
 }
 
@@ -611,15 +611,92 @@ Aquí termina la barra de navegación
 }
 
 .all {
-    background-color:#F5F1ED ;
+    background-color: #F5F1ED;
+    padding: 20px;
+    margin: 20px auto;
     width: 100%;
-    height: 40vh;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.all H1 {
+    font-size: 55PX;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 550;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.service {
+    margin: 30px 30px;
+    text-align: center;
+}
+
+.service img {
+    width: 80%;
+    height: 80%;
+}
+  
+.description {
+    font-weight: 500;
+}
+
+#wifi {
+    font-size: 50px;
+    margin-left: -60px;
+}
+
+#tv {
+    margin-top: 30px;
+    font-size: 50px;
+    margin-left: -60px;
+}
+
+#agua {
+    font-size: 50px;
+    margin-left: -60px;
+}
+
+#ic-s {
+    width: 60%;
+    height: 60%;
+}
+
+#c-s {
+    font-size: 40px;
 }
 
 #politics {
     background-color:#ffffff ;
     width: 100%;
     height: 100vh;
+}
+
+#politics h1 {
+    font-size: 60px;
+    margin-left: 80px;
+}
+
+#politics ul {
+    margin-left: 130px;
+    list-style: disc;
+    margin-right: 130px;
+}
+
+#politics li {
+    font-size: 40px;
+}
+
+#politics p {
+    font-size: 40px;
+    font-weight: 200;
+    margin-left: 40px;
 }
 /** fin de cat**/
 
