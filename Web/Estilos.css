@@ -312,7 +312,7 @@ Aquí termina la barra de navegación
 
 /**cat**/
 .HS-container {
-    height: 500px;
+    height: 400px;
     width: 80%;
     margin: 50px auto;
     background-color: #F5F1ED;
@@ -341,7 +341,7 @@ Aquí termina la barra de navegación
 }
 
 .S-container {
-    height: 700px;
+    height: 720px;
     width: 90%;
     margin: 50px auto;
     background-color: #F5F1ED;
@@ -374,7 +374,7 @@ Aquí termina la barra de navegación
     width: 30%;   
     height: 30%;
     padding-left:4% ;
-    padding-top: 7%;
+    padding-top: 3%;
     margin-right: 10%;
 }
 .bedg1-icon {
@@ -393,6 +393,17 @@ Aquí termina la barra de navegación
     top: 40px;
     margin-right: -200px;
     margin-top: -180px;
+}
+
+.kgsz {
+    margin-left: 100px;
+    margin-top: -250px;
+    margin-right: -500px;
+}
+
+.kgsz img {
+    width: 400px;
+    height: 400px;
 }
 
 .minibar1 {
@@ -419,12 +430,40 @@ Aquí termina la barra de navegación
     object-fit: cover;
 }
 
-.sum2 {
+.minibar2 {
     position: relative;
-    width: 4%;
-    height: 4%;
     top: 170px;
-    left: -170px;
+    left: 30px;
+}
+
+.minibar2 img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.cocina2 {
+    position: relative;
+    top: 150px;
+    left: 53px;
+}
+
+.cocina2 img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.sala {
+    position: relative;
+    top: 130px;
+    left: 70px;
+}
+
+.sala img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
 }
 
 .sum {
@@ -437,6 +476,49 @@ Aquí termina la barra de navegación
     margin-top: -170px;
 }
 
+.sum2 {
+    position: relative;
+    width: 4%;
+    height: 4%;
+    top: 170px;
+    left: -170px;
+}
+
+.com {
+    position: relative;
+    top: 310px;
+    left: -440px;
+}
+
+.com img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.sum3 {
+    position: relative;
+    top: 170px;
+    left: 35px;
+    height: 4%;
+    width: 4%;
+}
+
+.sum4 {
+    position: relative;
+    top: 170px;
+    left: 55px;
+    height: 4%;
+    width: 4%;
+}
+
+.sum5 {
+    position: relative;
+    top: 170px;
+    left: 60px;
+    height: 4%;
+    width: 4%;
+}
 
 .people-icon {
     float: left;
@@ -459,9 +541,8 @@ Aquí termina la barra de navegación
 }
 
 #txtd3 {
-
     display: block;
-    margin-left: 50px;
+    margin-left: -100px;
     flex: 1;
 }
 
@@ -501,9 +582,14 @@ Aquí termina la barra de navegación
     font-size: 19px;
 }
 
+#HG-i {
+    text-align: center;
+}
+
 .detalles3 h3 {
     font-size: 50px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .detalles3 ul {
@@ -513,7 +599,15 @@ Aquí termina la barra de navegación
 
 .detalles3 li {
     margin-bottom: 5px;
-    font-size: 22px;
+    font-size: 30px;
+}
+
+.detalles3 p {
+    font-size: 30px;
+}
+
+#S-i {
+    text-align: center;
 }
 
 .all {
