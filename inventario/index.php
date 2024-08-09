@@ -35,7 +35,7 @@
         <section id="inventarioSection" class="product-section">
             <h2>Productos</h2>
             <input type="text" placeholder="Buscar productos" id="searchInput">
-            <?php 
+            <?php
             $connection = pg_connect("host=localhost dbname=HOTELMO user=postgres password=Ahsy1zhdg123");
             if (!$connection){
                 echo "No se pudo conectar a la base de datos.";
@@ -54,9 +54,10 @@
                         <th>ID</th>
                         <th>Nombre</th>
                         <th>Descripción</th>
-                        <th>Cantidad</th>
+                        <th>Categoria</th>
                         <th>Precio</th>
-                        <th>Categoría</th>
+                        <th>Stock total</th>
+                        <th>Stock minimo</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,12 +65,13 @@
                     while ($row = pg_fetch_assoc($result)) {
                         echo "
                         <tr>
-                            <td>{$row['id_producto']}</td>
-                            <td>{$row['producto']}</td>
+                            <td>{$row['id']}</td>
+                            <td>{$row['nombre']}</td>
                             <td>{$row['descripcion']}</td>
-                            <td>{$row['cantidad']}</td>
-                            <td>{$row['precio']}</td>
-                            <td>{$row['categoria']}</td>
+                            <td>{$row['cateogoria']}</td>
+                            <td>{$row['precio_unitario']}</td>
+                            <td>{$row['stock_total']}</td>
+                            <td>{$row['stock_min']}</td>
                         </tr>
                         ";
                     }
@@ -93,7 +95,7 @@
         <!-- Agregar productos -->
         <section id="agregarProductoSection" class="agregarusuariod">
             <h2>Agregar Producto</h2>
-            <form id="agregarProductoForm" action="agregar_productos.php" method="post">
+            <form id="agregarProductoForm" action="php/agregar_productos.php" method="post">
                 <label for="productoID">ID:</label>
                 <input type="text" id="productoID" name="productoID" required><br>
 
@@ -120,7 +122,7 @@
         <!-- Eliminar productos -->
         <section id="eliminarProductoSection" class="content-section">
             <h2>Eliminar Producto</h2>
-            <form id="eliminarProductoForm" action="eliminar_productos.php" method="post">
+            <form id="eliminarProductoForm" action="php/eliminar_productos.php" method="post">
                 <label for="productoIDEliminar">ID del Producto:</label>
                 <input type="text" id="productoIDEliminar" name="productoIDEliminar" required><br>
                 <button type="submit">Eliminar Producto</button>
@@ -130,7 +132,7 @@
         <!-- Apartado de agregar usuarios -->
         <section id="agregarUsuariosSection" class="agregarusuariod">
             <h2>Agregar Usuarios</h2>
-            <form id="agregar_user" action="add_user.php" method="post">
+            <form id="agregar_user" action="php/add_user.php" method="post">
                 <label for="nombreUser">Nombre del usuario:</label>
                 <input type="text" id="nombreUser" name="nombreUser" required><br>
 
@@ -152,17 +154,11 @@
                 <label for="puesto">Puesto del usuario ("gerente", "trabajador"):</label>
                 <input type="text" id="puesto" name="puesto" required><br>
 
-                <label for="domicilioUser">Domicilio del usuario:</label>
-                <input type="text" id="domicilioUser" name="domicilioUser" required><br>
-
-                <label for="edadUser">Edad del usuario:</label>
-                <input type="number" id="edadUser" name="edadUser" required><br>
-
                 <button type="submit">Agregar usuario</button>
             </form>
 
             <h2>Eliminar Usuarios</h2>
-            <form id="eliminar_user" action="eliminar_user.php" method="post">
+            <form id="eliminar_user" action="php/eliminar_user.php" method="post">
                 <label for="eliminarnombre">Nombre del usuario:</label>
                 <input type="text" id="eliminarnombre" name="eliminarnombre"><br>
 
@@ -173,26 +169,25 @@
             <table>
                 <thead>
                     <tr>
+                        <th>id_usuario</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
-                        <th>Teléfono</th>
-                        <th>Email</th>
-                        <th>Contraseña</th>
-                        <th>ID</th>
-                        <th>Puesto</th>
-                        <th>Domicilio</th>
-                        <th>Edad</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Rol</th>
+                        <th>Username</th>
+                        <th>Password</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php 
-                    $conexion = pg_connect("host=localhost dbname=proyecto3.1 user=postgres password=k3vinpr0");
+                    <?php
+                    $conexion = pg_connect("host=localhost dbname=HOTELMO user=postgres password=Ahsy1zhdg123");
                     if (!$conexion){
                         echo "No se pudo conectar a la base de datos.";
                         exit;
                     }
 
-                    $resultado = pg_query($conexion, "SELECT * FROM empleado");
+                    $resultado = pg_query($conexion, "SELECT * FROM USUARIOS");
                     if (!$resultado) {
                         echo "No se pueden mostrar los usuarios.";
                         exit;
@@ -201,15 +196,14 @@
                     while ($row = pg_fetch_assoc($resultado)) {
                         echo "
                         <tr>
-                            <td>{$row['nombre']}</td>
+                        <td>{$row['id_usuario']}</td>
+                        <td>{$row['nombre']}</td>
                             <td>{$row['apellido']}</td>
-                            <td>{$row['tel']}</td>
-                            <td>{$row['email']}</td>
-                            <td>{$row['contraseña']}</td>
-                            <td>{$row['id_empleado']}</td>
-                            <td>{$row['puesto']}</td>
-                            <td>{$row['domicilio']}</td>
-                            <td>{$row['edad']}</td>
+                            <td>{$row['correo']}</td>
+                            <td>{$row['telefono']}</td>
+                            <td>{$row['rol']}</td>
+                            <td>{$row['username']}</td>
+                            <td>{$row['passwd']}</td>
                         </tr>
                         ";
                     }
@@ -224,7 +218,7 @@
             <!-- Aquí se mostrará la información del usuario -->
         </section>
 
-        <script src="Administrador.js"></script>
+        <script src="js/Administrador.js"></script>
     </div>
 </body>
 </html>
