@@ -27,7 +27,7 @@
 
         <!-- User options -->
         <div class="user-options">
-            <span class="icon"><img src="../img/ususario.png" class="iconos" id="infouserBtn"></span>
+            <span class="icon"><img src="../img/casa_icon_black.png" class="iconos" id="infouserBtn"></span>
         </div>
         <!-- Fin de user options -->
 
