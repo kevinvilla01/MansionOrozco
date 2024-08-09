@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $connection = dbConnect();
 
-    $query = "INSERT INTO PRODUCTOS (nombre, descripcion, categoria, precio_unitario, stock_total, stock_min) VALUES ('$productoNombre', '$productoDescripcion', '$productoCategoria', '$productoPrecio', '$productoStockTotal', 'productoStockMin')";
+    $query = "INSERT INTO PRODUCTOS (nombre, descripcion, categoria, precio_unitario, stock_total, stock_min) VALUES ('$productoNombre', '$productoDescripcion', '$productoCategoria', '$productoPrecio', '$productoStockTotal', '$productoStockMin')";
     $result = pg_query($connection, $query);
 
     if ($result) {

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="fondo">
-        <img src="logo_hotel_vectorizado.png" alt="Logo Hotel Mansión Orozco" class="logo">
+        <img src="../Web/img/logoco.png" alt="Logo Hotel Mansión Orozco" class="logo">
         <h1 class="titulo">¡Bienvenido al inventario!</h1>
 
         <!-- Lateral de navegación -->
@@ -21,13 +21,13 @@
                 <li id="eliminarProductoBtn">Eliminar producto</li>
                 <li id="agregarUsuarioBtn">Usuarios</li>
             </ul>
-            <a href="login.html"><button class="botonregresar">Regresar</button></a>
+            <a href="../Web/Login.html"><button class="botonregresar">Regresar</button></a>
         </nav>
         <!-- Fin de lateral de navegación -->
 
         <!-- User options -->
         <div class="user-options">
-            <span class="icon"><img src="user.png" class="iconos" id="infouserBtn"></span>
+            <span class="icon"><img src="../Web/img/ususario.png" class="iconos" id="infouserBtn"></span>
         </div>
         <!-- Fin de user options -->
 
@@ -61,14 +61,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php 
+                    <?php
                     while ($row = pg_fetch_assoc($result)) {
                         echo "
                         <tr>
                             <td>{$row['id']}</td>
                             <td>{$row['nombre']}</td>
                             <td>{$row['descripcion']}</td>
-                            <td>{$row['cateogoria']}</td>
+                            <td>{$row['categoria']}</td>
                             <td>{$row['precio_unitario']}</td>
                             <td>{$row['stock_total']}</td>
                             <td>{$row['stock_min']}</td>
