@@ -312,7 +312,7 @@ Aquí termina la barra de navegación
 
 /**cat**/
 .HS-container {
-    height: 500px;
+    height: 400px;
     width: 80%;
     margin: 50px auto;
     background-color: #F5F1ED;
@@ -326,7 +326,7 @@ Aquí termina la barra de navegación
 }
 
 .HG-container {
-    height: 600px;
+    height: 500px;
     width: 80%;
     margin: 50px auto;
     background-color: #F5F1ED;
@@ -341,7 +341,7 @@ Aquí termina la barra de navegación
 }
 
 .S-container {
-    height: 400px;
+    height: 720px;
     width: 90%;
     margin: 50px auto;
     background-color: #F5F1ED;
@@ -374,64 +374,155 @@ Aquí termina la barra de navegación
     width: 30%;   
     height: 30%;
     padding-left:4% ;
-    padding-top: 7%;
+    padding-top: 3%;
     margin-right: 10%;
 }
 .bedg1-icon {
-    margin-left: 3%;
-    width: 24%;
-    height: 24%;
+    position: relative;
+    top: 40px;
+    margin-left: 4%;
+    width: 26%;
+    height: 26%;
+    margin-top: -190px;
 }
 
 .bedm-icon2{
+    position: relative;
     width: 23%;
     height: 23%;
-    margin-right: 0px;
+    top: 40px;
+    margin-right: -200px;
+    margin-top: -180px;
 }
 
-.minibar {
+.kgsz {
+    margin-left: 100px;
+    margin-top: -250px;
+    margin-right: -500px;
+}
+
+.kgsz img {
+    width: 400px;
+    height: 400px;
+}
+
+.minibar1 {
     position: relative;
-    top: 250px;
-    left: -410px;
+    top: 170px;
+    left: -190px;
 }
 
-.minibar img {
+.minibar1 img {
     height: 150%;
     width: 150%;
     object-fit: cover;
 }
 
-.cocina {
+.cocina1 {
     position: relative;
-    top: 240px;
-    left: -370px;
+    top:160px;
+    left: -150px;
 }
 
-.cocina img {
+.cocina1 img {
     height: 150%;
     width: 150%;
     object-fit: cover;
+}
+
+.minibar2 {
+    position: relative;
+    top: 170px;
+    left: 30px;
+}
+
+.minibar2 img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.cocina2 {
+    position: relative;
+    top: 150px;
+    left: 53px;
+}
+
+.cocina2 img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.sala {
+    position: relative;
+    top: 130px;
+    left: 70px;
+}
+
+.sala img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.sum {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 6%;
+    top: 40px;
+    height: 6%;
+    margin-top: -170px;
 }
 
 .sum2 {
     position: relative;
     width: 4%;
     height: 4%;
-    top: 250px;
-    left: -390px;
+    top: 170px;
+    left: -170px;
 }
 
-.sum {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 6%;
-    height: 6%;
+.com {
+    position: relative;
+    top: 310px;
+    left: -440px;
 }
 
+.com img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.sum3 {
+    position: relative;
+    top: 170px;
+    left: 35px;
+    height: 4%;
+    width: 4%;
+}
+
+.sum4 {
+    position: relative;
+    top: 170px;
+    left: 55px;
+    height: 4%;
+    width: 4%;
+}
+
+.sum5 {
+    position: relative;
+    top: 170px;
+    left: 60px;
+    height: 4%;
+    width: 4%;
+}
 
 .people-icon {
     float: left;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .people-icon img {
@@ -451,7 +542,7 @@ Aquí termina la barra de navegación
 
 #txtd3 {
     display: block;
-    margin-left: 10px;
+    margin-left: -100px;
     flex: 1;
 }
 
@@ -467,8 +558,13 @@ Aquí termina la barra de navegación
 }
 
 .detalles1 li {
+    margin-left: 20px;
     margin-bottom: 5px;
     font-size: 22px;
+}
+
+.detalles2 {
+    padding-right: 10%;
 }
 
 .detalles2 h3 {
@@ -486,9 +582,14 @@ Aquí termina la barra de navegación
     font-size: 19px;
 }
 
+#HG-i {
+    text-align: center;
+}
+
 .detalles3 h3 {
     font-size: 50px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .detalles3 ul {
@@ -498,7 +599,15 @@ Aquí termina la barra de navegación
 
 .detalles3 li {
     margin-bottom: 5px;
-    font-size: 22px;
+    font-size: 30px;
+}
+
+.detalles3 p {
+    font-size: 30px;
+}
+
+#S-i {
+    text-align: center;
 }
 
 .all {
@@ -1235,3 +1344,137 @@ Aquí termina la barra de navegación
     text-decoration: underline;
 }
 /**aquí terminan los estilos del error 404**/
+/**aquí comienza los estilos administracion**/
+.header_inv
+{
+    display: flex;
+  background-color: #4e4e4e;
+    height: 7vh;
+    
+}
+#header_inv_part1-1:hover
+{
+    transform: scale(1.1);
+}
+#header_inv_part1-2:hover
+{
+    transform: scale(1.1);
+}
+#header_inv_part2-3:hover
+{
+    transform: scale(1.1);
+}
+#header_inv_part2-1:hover
+{
+    transform: scale(1.1);
+}
+#icon1_header_inv_part2-2:hover
+{
+    transform: scale(1.1);
+}
+#header_inv_part1
+{
+    display: flex;
+    justify-items: start;
+
+    height: 100%;
+    width: 20%;
+}
+#header_inv_part1-1
+{
+    display: flex;
+    justify-content: center;
+    justify-items: start;
+  
+    width: 30%;
+    height: 100%;
+    transition: all 300ms ease;
+}
+#img1_header_inv_part1-1
+{
+    display: flex;
+    height: 70%;
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+}
+#header_inv_part1-2
+{
+    display: flex;
+    justify-items: end;
+
+    width: 60%;
+    height: 100%;
+    justify-content: start;
+    transition: all 300ms ease;
+}
+#text1_header_inv_part1-2
+{
+    display: flex;
+    color: white;
+    font: 30px arial;
+    align-self: center;
+}
+
+#header_inv_part2
+{
+    display: flex;
+    justify-items: end;
+   
+    height: 100%;
+    width: 80%;
+    
+}
+#header_inv_part2-1
+{
+    display: flex;
+   background-color: #606060;
+    height: 100%;
+    width: 4%;
+    align-content: end;
+    transition: all 300ms ease;
+}
+#icon1_header_inv_part2-1
+{
+    display: flex;
+    align-self: center;
+    color: #fff;
+   
+}
+#header_inv_part2-2
+{
+    display: flex;
+  
+    height: 100%;
+    width: 92%;
+    justify-content: end;
+    
+}
+#icon1_header_inv_part2-2
+{
+    display: flex;
+    transition: all 300ms ease;
+}
+#header_inv_part2-3
+{
+    display: flex;
+background-color: #626262;
+    height: 100%;
+    width: 4%;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+#icon1_header_inv_part2-3
+{
+    display: flex;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    justify-self: right;
+    
+}
+.panel_inv
+{
+
+}
+/**aquí terminan los estilos administracion**/

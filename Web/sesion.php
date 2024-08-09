@@ -1,18 +1,21 @@
 <?php
 require 'conection.php';
 
-if (empty($_POST["user"]) || empty($_POST["password"])){
+session_start();
+
+if (empty($_POST["username"]) || empty($_POST["password"])){
     echo "<script>alert('Los campos están vacíos');</script>";
 }
 else {
-    $nombre=$_POST["user"];
-    $contraseña=$_POST["password"];
-    $mysql=pg_query($conexion,"select * from empleado where nombre='$nombre' and contraseña='$contraseña' ");
+    $usr=$_POST["username"];
+    $pass=$_POST["password"];
+    $query=pg_query($Conection,"SELECT * FROM USUARIOS WHERE username='$usr' AND passwd='$pass'");
 
-    if (pg_num_rows($mysql)>0)
-        header("location:adm_panel.html");
+    if (pg_num_rows($query)>0)
+        header("location:inventario");
     else{
         echo "<script>alert('ACCESO DENEGADO');</script>";
     }
 }
+
 ?>

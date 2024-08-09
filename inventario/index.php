@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="fondo">
-        <img src="logo_hotel_vectorizado.png" alt="Logo Hotel Mansión Orozco" class="logo">
+        <img src="../Web/img/logoco.png" alt="Logo Hotel Mansión Orozco" class="logo">
         <h1 class="titulo">¡Bienvenido al inventario!</h1>
 
         <!-- Lateral de navegación -->
@@ -21,13 +21,13 @@
                 <li id="eliminarProductoBtn">Eliminar producto</li>
                 <li id="agregarUsuarioBtn">Usuarios</li>
             </ul>
-            <a href="login.html"><button class="botonregresar">Regresar</button></a>
+            <a href="../Web/Login.html"><button class="botonregresar">Regresar</button></a>
         </nav>
         <!-- Fin de lateral de navegación -->
 
         <!-- User options -->
         <div class="user-options">
-            <span class="icon"><img src="user.png" class="iconos" id="infouserBtn"></span>
+            <span class="icon"><img src="../Web/img/ususario.png" class="iconos" id="infouserBtn"></span>
         </div>
         <!-- Fin de user options -->
 
@@ -35,7 +35,7 @@
         <section id="inventarioSection" class="product-section">
             <h2>Productos</h2>
             <input type="text" placeholder="Buscar productos" id="searchInput">
-            <?php 
+            <?php
             $connection = pg_connect("host=localhost dbname=HOTELMO user=postgres password=Ahsy1zhdg123");
             if (!$connection){
                 echo "No se pudo conectar a la base de datos.";
@@ -54,22 +54,24 @@
                         <th>ID</th>
                         <th>Nombre</th>
                         <th>Descripción</th>
-                        <th>Cantidad</th>
+                        <th>Categoria</th>
                         <th>Precio</th>
-                        <th>Categoría</th>
+                        <th>Stock total</th>
+                        <th>Stock minimo</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php 
+                    <?php
                     while ($row = pg_fetch_assoc($result)) {
                         echo "
                         <tr>
-                            <td>{$row['id_producto']}</td>
-                            <td>{$row['producto']}</td>
+                            <td>{$row['id']}</td>
+                            <td>{$row['nombre']}</td>
                             <td>{$row['descripcion']}</td>
-                            <td>{$row['cantidad']}</td>
-                            <td>{$row['precio']}</td>
                             <td>{$row['categoria']}</td>
+                            <td>{$row['precio_unitario']}</td>
+                            <td>{$row['stock_total']}</td>
+                            <td>{$row['stock_min']}</td>
                         </tr>
                         ";
                     }
@@ -93,9 +95,7 @@
         <!-- Agregar productos -->
         <section id="agregarProductoSection" class="agregarusuariod">
             <h2>Agregar Producto</h2>
-            <form id="agregarProductoForm" action="agregar_productos.php" method="post">
-                <label for="productoID">ID:</label>
-                <input type="text" id="productoID" name="productoID" required><br>
+            <form id="agregarProductoForm" action="php/agregar_productos.php" method="post">
 
                 <label for="productoNombre">Nombre:</label>
                 <input type="text" id="productoNombre" name="productoNombre" required><br>
@@ -103,14 +103,17 @@
                 <label for="productoDescripcion">Descripción:</label>
                 <input type="text" id="productoDescripcion" name="productoDescripcion" required><br>
 
-                <label for="productoCantidad">Cantidad:</label>
-                <input type="number" id="productoCantidad" name="productoCantidad" required><br>
+                <label for="productoCantidad">Categoria:</label>
+                <input type="text" id="productoCategoria" name="productoCategoria" required><br>
 
                 <label for="productoPrecio">Precio:</label>
                 <input type="number" id="productoPrecio" name="productoPrecio" required><br>
 
-                <label for="productoCategoria">Categoría:</label>
-                <input type="text" id="productoCategoria" name="productoCategoria" required><br>
+                <label for="productoCategoria">Stock total:</label>
+                <input type="text" id="productoCategoria" name="productoStockTotal" required><br>
+
+                <label for="productoCategoria">Stock Minimo:</label>
+                <input type="text" id="productoCategoria" name="productoStockMin" required><br>
 
                 <button type="submit">Agregar Producto</button>
             </form>
@@ -120,7 +123,7 @@
         <!-- Eliminar productos -->
         <section id="eliminarProductoSection" class="content-section">
             <h2>Eliminar Producto</h2>
-            <form id="eliminarProductoForm" action="eliminar_productos.php" method="post">
+            <form id="eliminarProductoForm" action="php/eliminar_productos.php" method="post">
                 <label for="productoIDEliminar">ID del Producto:</label>
                 <input type="text" id="productoIDEliminar" name="productoIDEliminar" required><br>
                 <button type="submit">Eliminar Producto</button>
@@ -130,39 +133,33 @@
         <!-- Apartado de agregar usuarios -->
         <section id="agregarUsuariosSection" class="agregarusuariod">
             <h2>Agregar Usuarios</h2>
-            <form id="agregar_user" action="add_user.php" method="post">
+            <form id="agregar_user" action="php/add_user.php" method="post">
                 <label for="nombreUser">Nombre del usuario:</label>
                 <input type="text" id="nombreUser" name="nombreUser" required><br>
 
                 <label for="apellidoUser">Apellido del usuario:</label>
                 <input type="text" id="apellidoUser" name="apellidoUser" required><br>
 
+                <label for="emailUser">Email del usuario:</label>
+                <input type="email" id="emailUser" name="emailUser" required><br>
+
                 <label for="tel">Teléfono del usuario:</label>
                 <input type="number" id="tel" name="tel" required><br>
 
-                <label for="emailUser">Email del usuario:</label>
-                <input type="email" id="emailUser" name="emailUser" required><br>
+                <label for="userempleado">Username del empleado:</label>
+                <input type="text" id="userempleado" name="userempleado" required><br>
 
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required><br>
 
-                <label for="idempleado">ID del empleado:</label>
-                <input type="number" id="idempleado" name="idempleado" required><br>
-
                 <label for="puesto">Puesto del usuario ("gerente", "trabajador"):</label>
                 <input type="text" id="puesto" name="puesto" required><br>
-
-                <label for="domicilioUser">Domicilio del usuario:</label>
-                <input type="text" id="domicilioUser" name="domicilioUser" required><br>
-
-                <label for="edadUser">Edad del usuario:</label>
-                <input type="number" id="edadUser" name="edadUser" required><br>
 
                 <button type="submit">Agregar usuario</button>
             </form>
 
             <h2>Eliminar Usuarios</h2>
-            <form id="eliminar_user" action="eliminar_user.php" method="post">
+            <form id="eliminar_user" action="php/eliminar_user.php" method="post">
                 <label for="eliminarnombre">Nombre del usuario:</label>
                 <input type="text" id="eliminarnombre" name="eliminarnombre"><br>
 
@@ -173,26 +170,25 @@
             <table>
                 <thead>
                     <tr>
+                        <th>id_usuario</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
-                        <th>Teléfono</th>
-                        <th>Email</th>
-                        <th>Contraseña</th>
-                        <th>ID</th>
-                        <th>Puesto</th>
-                        <th>Domicilio</th>
-                        <th>Edad</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Rol</th>
+                        <th>Username</th>
+                        <th>Password</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php 
-                    $conexion = pg_connect("host=localhost dbname=proyecto3.1 user=postgres password=k3vinpr0");
+                    <?php
+                    $conexion = pg_connect("host=localhost dbname=HOTELMO user=postgres password=Ahsy1zhdg123");
                     if (!$conexion){
                         echo "No se pudo conectar a la base de datos.";
                         exit;
                     }
 
-                    $resultado = pg_query($conexion, "SELECT * FROM empleado");
+                    $resultado = pg_query($conexion, "SELECT * FROM USUARIOS");
                     if (!$resultado) {
                         echo "No se pueden mostrar los usuarios.";
                         exit;
@@ -201,15 +197,14 @@
                     while ($row = pg_fetch_assoc($resultado)) {
                         echo "
                         <tr>
-                            <td>{$row['nombre']}</td>
+                        <td>{$row['id_usuario']}</td>
+                        <td>{$row['nombre']}</td>
                             <td>{$row['apellido']}</td>
-                            <td>{$row['tel']}</td>
-                            <td>{$row['email']}</td>
-                            <td>{$row['contraseña']}</td>
-                            <td>{$row['id_empleado']}</td>
-                            <td>{$row['puesto']}</td>
-                            <td>{$row['domicilio']}</td>
-                            <td>{$row['edad']}</td>
+                            <td>{$row['correo']}</td>
+                            <td>{$row['telefono']}</td>
+                            <td>{$row['rol']}</td>
+                            <td>{$row['username']}</td>
+                            <td>{$row['passwd']}</td>
                         </tr>
                         ";
                     }
@@ -224,7 +219,7 @@
             <!-- Aquí se mostrará la información del usuario -->
         </section>
 
-        <script src="Administrador.js"></script>
+        <script src="js/Administrador.js"></script>
     </div>
 </body>
 </html>
